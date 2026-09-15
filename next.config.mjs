@@ -18,6 +18,9 @@ export default withNextra({
     unoptimized: true
   },
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath
+  },
   ...(basePath
     ? {
         basePath,

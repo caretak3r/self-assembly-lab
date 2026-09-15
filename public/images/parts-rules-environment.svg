@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" role="img" aria-label="Parts plus rules plus environment equals order">
+  <rect width="720" height="220" fill="#0f172a"/>
+  <rect x="20" y="40" width="140" height="100" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <text x="90" y="95" text-anchor="middle" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Parts</text>
+  <text x="90" y="118" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">tiles · modules</text>
+  <text x="185" y="100" fill="#38bdf8" font-family="system-ui,sans-serif" font-size="28" font-weight="700">+</text>
+  <rect x="210" y="40" width="140" height="100" rx="12" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+  <text x="280" y="95" text-anchor="middle" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Rules</text>
+  <text x="280" y="118" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">local · sticky</text>
+  <text x="375" y="100" fill="#38bdf8" font-family="system-ui,sans-serif" font-size="28" font-weight="700">+</text>
+  <rect x="400" y="40" width="140" height="100" rx="12" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+  <text x="470" y="95" text-anchor="middle" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Environment</text>
+  <text x="470" y="118" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">shake · heat · time</text>
+  <text x="560" y="100" fill="#38bdf8" font-family="system-ui,sans-serif" font-size="28" font-weight="700">→</text>
+  <rect x="580" y="40" width="120" height="100" rx="12" fill="#14532d" stroke="#4ade80" stroke-width="2"/>
+  <text x="640" y="95" text-anchor="middle" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Order</text>
+  <text x="640" y="118" text-anchor="middle" fill="#bbf7d0" font-family="system-ui,sans-serif" font-size="12">structure</text>
+  <text x="360" y="190" text-anchor="middle" fill="#64748b" font-family="system-ui,sans-serif" font-size="13">Self-Assembly Lab · educational diagram (CC0)</text>
+</svg>

@@ -1,0 +1,77 @@
+# Chapter 4 — Robot swarms & modular robots you can see
+
+If DNA is hard to see, **robots** make self-assembly visible. Same big idea: local rules + many units → global shape or motion.
+
+## Two families
+
+| Family | What it is | Famous example |
+|--------|------------|----------------|
+| **Swarm robots** | Many simple mobile robots | Kilobots (~1,024 forming shapes) |
+| **Modular / reconfigurable robots** | Dockable modules that change shape | M-Blocks, SMORES, Claytronics vision |
+
+Programmable matter sits in the **vision** column: ensembles of tiny modules that reshape on demand. Hardware today is still research-scale.
+
+## Kilobots — swarm self-assembly you can watch
+
+Each Kilobot is deliberately simple: vibration locomotion, local IR sensing/communication, cheap parts. The science is in the **collective algorithm**.
+
+<YouTube id="ISMwLCFwgK4" title="Introduction to Kilobot" />
+
+Source: [Introduction to Kilobot](https://www.youtube.com/watch?v=ISMwLCFwgK4).
+
+Then watch the thousand-robot demo again with new eyes — seeds, edge-following, local distance:
+
+<YouTube id="xK54Bu9HFRw" title="Harvard thousand-Kilobot swarm demo" />
+
+Plain-language writeup: [Harvard SEAS news](https://seas.harvard.edu/news/self-organizing-thousand-robot-swarm). Lab context: [ssr.seas.harvard.edu/kilobots](https://ssr.seas.harvard.edu/kilobots).
+
+<PubImg
+  src="/images/kilobot-swarm.jpg"
+  alt="Kilobot swarm on a tabletop"
+  caption="Large numbers matter: algorithms must tolerate noise and broken units."
+  credit="asuscreative · CC BY-SA 4.0"
+  width={1280}
+  height={853}
+/>
+
+<Callout type="info" emoji="📖">
+**Glossary — seed.** A starting robot (or molecular seed structure) that defines an origin or kickstarts growth. In the Kilobot shape demo, a few robots mark the coordinate origin.
+</Callout>
+
+## Modular cubes that climb each other
+
+MIT CSAIL **M-Blocks** use an internal flywheel + magnets — no external arms — to pivot and climb.
+
+<YouTube id="6aZbJS6LZbs" title="Small cubes that self-assemble — MIT M-Blocks" />
+
+Source: [MIT — Small cubes that self-assemble](https://www.youtube.com/watch?v=6aZbJS6LZbs). Background: [MIT News 2019](https://news.mit.edu/2019/self-transforming-robot-blocks-jump-spin-flip-identify-each-other-1030).
+
+Other lineages to skim (open project pages, not product stores):
+
+- [SMORES-EP (UPenn ModLab)](https://www.modlabupenn.org/smores-ep/) — electro-permanent magnet connectors
+- [CMU Claytronics](http://www.cs.cmu.edu/~claytronics/index.html) — classic programmable-matter vision + papers
+- Survey: Seo, Paik & Yim 2019 modular reconfigurable robotics ([DOI](https://doi.org/10.1146/annurev-control-053018-023834))
+
+## What beginners can actually build
+
+You probably will **not** fab a thousand Kilobots this month. Realistic starter paths:
+
+1. **Simulate** swarms (NetLogo, Python) — Experiment 5 on [Experiments](/experiments).
+2. **Few-unit modular toys** — 3D-printed blocks + magnets (see [Manufacturing](/manufacturing)).
+3. **Open educational platforms** — look for university swarm courses, K-Team/Kilobot academic kits when available, or DIY vibration-robot tutorials at makerspaces.
+4. **Microcontrollers** — Arduino / ESP32 for neighbor messaging prototypes (UART/IR/radio).
+
+## Try this (human swarm)
+
+1. Give 6 friends one rule: “Stay an arm’s length from the nearest two people; slowly form a circle.”
+2. No leader talking.
+3. Time how long it takes; then change the rule to “form a line.”
+4. Discuss: which failures look like robot defects?
+
+## Honesty checkpoint
+
+Swarm demos are thrilling. Scaling to useful outdoor work, strong structures, or consumer products still hits energy, reliability, and manufacturing walls. Treat viral videos as **existence proofs**, not shipping dates.
+
+## Next
+
+→ [Chapter 5 — Your first safe experiments](/beginners/chapter-5)
