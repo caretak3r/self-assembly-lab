@@ -1,0 +1,224 @@
+# Safe starter experiments
+
+All activities avoid hazardous chemistry, open flames for chemistry, high-voltage, pressurized gases, and biological agents. Suitable for young scientists/engineers with adult supervision where noted. Prefer simulation when wet/physical resources are limited.
+
+**Safety baseline:** no strong acids/bases, no organic solvents beyond household vinegar/soap, no neodymium magnet swallowing risk for young children (use taped/embedded magnets), eye protection for any small-parts / elastic-band work.
+
+<Callout type="info">
+**Start here labs:** Experiments **1–5** are the best first week. Experiments **6–10** deepen theory, geometry, programmable-matter thinking, and DNA design (CAD only).
+</Callout>
+
+---
+
+## Experiment 1 — Floating magnet tiles (2D magnetic self-assembly)
+
+**Goal:** Watch discrete parts form ordered clusters from local attraction/repulsion rules.
+
+**Materials:** Foam or cork tiles; small disc magnets (tape/embed so they cannot detach); shallow tray of water; ruler; phone camera. Optional: orbital shaker or gentle hand agitation.
+
+**Steps:**
+1. Embed magnets with known pole orientations (e.g., N-up vs S-up patterns, or edge magnets with assigned polarity).
+2. Float 8–20 tiles on water; record initial disordered state.
+3. Agitate gently for 30–60 s; stop; photograph.
+4. Repeat at “low / medium / high” agitation (proxy for temperature/noise).
+
+**Measurement:** Cluster size distribution; number of distinct motifs; time to first stable dimer/trimer.
+
+**Success criteria:** At least one reproducible ordered motif appears more often than chance across 5 trials.
+
+**Discussion:** Which rules (polarity patterns) favor chains vs closed shapes? How does excess shaking cause defects?
+
+---
+
+## Experiment 2 — Cheerios / capillary “FloaTiles” effect
+
+**Goal:** Observe capillary-driven assembly without magnets.
+
+**Materials:** Bowl of water; Cheerios or 3D-printed/light floating shapes; dish soap (for a disruption trial); camera.
+
+**Steps:**
+1. Sprinkle pieces on still water; observe clustering at the surface.
+2. Time how long until a connected cluster forms.
+3. Add one drop of dish soap far from the cluster; observe change.
+
+**Measurement:** Cluster diameter vs time; effect of soap (surface-tension change).
+
+**Success criteria:** Clear before/after difference when surface tension is disrupted.
+
+**Discussion:** How is this like/unlike molecular hydrophobic assembly? Why is soap a “rule change”?
+
+**Refs for educators:** [UCSD MRSEC experimental self-assembly](https://mrsec.ucsd.edu/experimental-self-assembly/); [FloaTiles](https://karegeo.github.io/floatiles/)
+
+---
+
+## Experiment 3 — Soap-bubble raft packing
+
+**Goal:** See emergent crystal-like order from identical “particles.”
+
+**Materials:** Dish soap + water + glycerin (optional); shallow tray; straw; phone camera; graph paper overlay.
+
+**Steps:**
+1. Blow a monolayer of similar-sized bubbles.
+2. Photograph packing; count neighbors (coordination number).
+3. Intentionally introduce a larger/smaller bubble; watch defect formation.
+
+**Measurement:** Fraction of 6-neighbor bubbles; defect count.
+
+**Success criteria:** Majority hexagonal packing in a calm raft; visible defects around size impurities.
+
+**Discussion:** Polydispersity and defects — why monodisperse colloids matter in labs.
+
+---
+
+## Experiment 4 — Paperclip / chain “foldamer” with local rules (tabletop algorithm)
+
+**Goal:** Simulate algorithmic assembly with physical tokens (no chemistry).
+
+**Materials:** Colored paperclips or LEGO bricks with labeled edges (A/a, B/b); printed rule card; timer.
+
+**Steps:**
+1. Assign complementary edges (A sticks only to a, etc.).
+2. Start from a “seed” piece; add pieces only when a rule matches (cooperative binding optional: need 2 matching edges).
+3. Compare greedy random attachment vs rule-constrained attachment.
+
+**Measurement:** Yield of target shape over 10 runs; number of trapped wrong assemblies.
+
+**Success criteria:** Rule-constrained protocol reaches target ≥70% of runs; random does worse.
+
+**Discussion:** Connect to DNA sticky ends and aTAM “temperature” (how many bonds needed).
+
+---
+
+## Experiment 5 — Kilobot / swarm simulation lab (software)
+
+**Goal:** Recreate shape formation with local rules in simulation.
+
+**Materials:** Laptop; Kilombo / ARGoS / NetLogo / Python agent-based sim (pick one available); target shape bitmap.
+
+**Steps:**
+1. Implement robots with: edge-following, distance-to-seed estimate, join-if-inside-shape.
+2. Run N = 50, 200, 500 agents; inject 5–10% “failed” robots.
+
+**Measurement:** Fraction of shape filled; completion time; defect holes.
+
+**Success criteria:** Shape recognizable at N≥200 with ≤10% failures still completing outline.
+
+**Discussion:** Why local communication scales; what breaks in cluttered environments.
+
+**Media tie-in:** [Harvard Kilobot swarm video](https://www.youtube.com/watch?v=xK54Bu9HFRw)
+
+---
+
+## Experiment 6 — Cellular automaton / tile assembly toy model
+
+**Goal:** Connect self-assembly to computation.
+
+**Materials:** Computer; Python or online CA tool; optional physical tiles printed on cardstock.
+
+**Steps:**
+1. Code a 1D or 2D tile assembly with glue strengths 0/1/2 and a temperature threshold.
+2. Grow from a seed; try an XOR or binary-counter tile set (simplified).
+3. Randomly flip glue matches with probability p (errors).
+
+**Measurement:** Correct structure length/area vs p.
+
+**Success criteria:** Plot showing sharp drop in yield as p increases; write 1 paragraph relating to experimental DNA tile error.
+
+**Discussion:** Why proofreading / redundancy appears in advanced designs.
+
+---
+
+## Experiment 7 — Patchy-particle packing with 3D-printed modules (dry)
+
+**Goal:** Explore geometry-directed assembly.
+
+**Materials:** 3D-printed tetrahedra/cubes with Velcro or embedded magnets on chosen faces; tray; optional mild vibration plate.
+
+**Steps:**
+1. Design two species: “only face X binds.”
+2. Shake gently in a box; separate bound dimers/trimers.
+3. Compare isotropic Velcro-all-faces vs patchy designs.
+
+**Measurement:** Fraction of intended bonds vs unintended.
+
+**Success criteria:** Patchy design shows ≥2× higher specificity than isotropic control.
+
+**Discussion:** Directional interactions in DNA origami / colloidal patchy particles.
+
+---
+
+## Experiment 8 — “Programmable matter” reconfiguration on a grid
+
+**Goal:** Experience distributed reconfiguration cost.
+
+**Materials:** Checkerboard; stackable cubes or sliding pixels; printed start/goal shapes; stopwatch. Optional: micro:bit/LEGO robots pushing blocks.
+
+**Steps:**
+1. From shape A to shape B using only local moves (slide to empty neighbor; keep connectivity if required).
+2. Compare centralized planner (one student directs) vs local rules (each cube follows a simple priority).
+
+**Measurement:** Move count; time; connectivity violations.
+
+**Success criteria:** Both methods reach goal; students quantify move overhead of local rules.
+
+**Discussion:** Why programmable-matter algorithms care about connectivity and parallel moves.
+
+---
+
+## Experiment 9 — Evaporative coffee-ring / crystal demo (household, observational)
+
+**Goal:** See nonequilibrium patterns from drying — contrast with designed assembly.
+
+**Materials:** Coffee or food coloring in water; glass slide or white plate; lamp; camera.
+
+**Steps:**
+1. Place drops of different concentrations; let dry undisturbed.
+2. Photograph rings/patterns; vary humidity/airflow gently with a fan at low setting.
+
+**Measurement:** Ring width vs concentration (qualitative OK).
+
+**Success criteria:** Reproducible coffee-ring observation; written contrast vs “programmed” sticky-end assembly.
+
+**Discussion:** Not all self-organization is useful/designed — kinetics and evaporation create patterns “for free.”
+
+**Safety:** Food-safe materials only; no solvents.
+
+---
+
+## Experiment 10 — DNA origami *design* assignment (simulation / CAD only)
+
+**Goal:** Learn scaffolded origami workflow without wet lab.
+
+**Materials:** Computer; cadnano / oxDNA / online DNA design tutorials; Rothemund 2006 figures ([author PDF](https://www.dna.caltech.edu/Papers/DNAorigami-nature.pdf)).
+
+**Steps:**
+1. Sketch a simple 2D silhouette (heart, letter, triangle).
+2. Route a scaffold conceptually (or in cadnano if available).
+3. List staple roles; estimate approximate size (~100 nm classic origami).
+4. Write a mini “methods” section: anneal, verify with AFM (describe, don’t perform if unequipped).
+
+**Measurement:** Completeness of design checklist; peer review of staple/scaffold understanding.
+
+**Success criteria:** Correct explanation of scaffold vs staples; scale bar estimate; one limitation noted (cost, yield, imaging).
+
+**Discussion:** Why educational DNA wet labs are rare (cost, equipment) — simulation is a valid scientific skill.
+
+**Safety:** No oligonucleotides ordered for young students unless under proper lab program.
+
+---
+
+## Optional extension — NetLogo “emergence” gallery
+
+Compare flocking (dynamic self-organization) vs tile assembly (static programmed structure). Write a one-page essay: which is closer to Kilobots? to DNA crystals?
+
+---
+
+## Shared assignment rubric
+
+| Criterion | Weight |
+|-----------|--------|
+| Clear hypothesis about rules → structure | 25% |
+| Quantitative measurement + repeats | 25% |
+| Honest failure modes / defects | 20% |
+| Connection to a named paper from [Papers](/papers) | 20% |
+| Safety & documentation (photos/notes) | 10% |

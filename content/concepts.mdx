@@ -1,0 +1,69 @@
+# Concepts & vocabulary
+
+Foundations from Week 1 of the [learning path](/learn). After this page you should explain self-assembly to a friend in under two minutes — without drowning them in jargon.
+
+<Callout type="info">
+**Mental model:** parts + rules + environment → ordered structure.
+</Callout>
+
+## Core definitions
+
+| Term | Plain-language meaning |
+|------|------------------------|
+| **Self-assembly** | Components organize into patterns/structures *without* a human placing each piece. |
+| **Self-organization** | Broader cousin: order emerges from local interactions (includes dynamic systems like flocks). |
+| **Static assembly** | Equilibrium structures that stay put once formed (many crystals, DNA origami after anneal). |
+| **Dynamic assembly** | Needs continuous energy flow (living systems, some nonequilibrium soft matter). |
+| **Sticky end** | Short overhanging DNA sequence that binds a complementary partner — programmable glue. |
+| **Seed** | Starting piece (or robot) that defines where/when growth begins; often a coordinate origin. |
+| **Defect** | Wrong attachment, vacancy, grain boundary — assembly is noisy in real systems. |
+| **Modular robot** | Robot built from repeated modules that can dock, undock, and reconfigure. |
+| **Programmable matter** | Vision: ensembles of tiny modules that form and reshape 3D objects on demand. |
+| **aTAM** | Abstract Tile Assembly Model — formal CS model of tiles + glues + temperature. |
+| **Kinetic trap** | System stuck in a wrong/local minimum because pathways matter, not only equilibrium. |
+| **Cooperative binding** | Attachment requires multiple matching bonds (raises the “temperature” threshold). |
+
+## Scales
+
+Self-assembly is not one technology — it is a **family of principles** across scales:
+
+- **Molecular** — DNA tiles, origami, DNA-coated colloids
+- **Mesoscale** — capillary floatiles, soap-bubble rafts, patchy particles
+- **Robot swarm** — Kilobots, particle robots
+- **Modular / programmable matter** — Claytronics vision, lattice/chain modular robots
+
+Same idea, different physics. Whitesides & Grzybowski (2002) remain the best single conceptual map: [DOI](https://doi.org/10.1126/science.1070821) · [open PDF mirror](https://courses.cs.duke.edu/spring02/cps296.5/papers/WhitesidesSelfAssembly.pdf).
+
+## Static vs dynamic
+
+| | Static | Dynamic |
+|---|--------|---------|
+| Energy | Relaxes toward equilibrium | Needs continuous energy input |
+| Examples | DNA origami after annealing; crystal lattices | Cells, flocks, dissipative assembly |
+| Engineering note | Easier to design & verify today | Closer to life; much harder to program |
+
+## What engineers actually “program”
+
+1. **Geometry** of parts (faces, patches, shapes)
+2. **Interaction rules** (complementary DNA, magnet polarity, IR messages)
+3. **Environment** (temperature schedule, agitation, chemical conditions)
+4. **Seeds / initial conditions** (who starts, where)
+
+They do *not* usually place every atom or every robot by hand.
+
+## Nature vs engineered systems
+
+| Nature | Engineers |
+|--------|-----------|
+| Already spectacular at self-assembly | Borrow principles; encode new rules |
+| Evolution + metabolism | CAD + anneals + distributed algorithms |
+| Working products (you) | Mostly lab demos + early materials |
+
+## Journal prompt
+
+Where have you seen self-assembly in nature or daily life? Write three examples (crystals, soap films, bird flocks, snowflakes, protein folding…). Then map each to: parts, rules, environment.
+
+## Next
+
+- Pick a track: [DNA / molecular](/dna) or [robots & programmable matter](/robots)
+- Or start building intuition with [Experiments 2–3](/experiments) (capillary / bubble raft)

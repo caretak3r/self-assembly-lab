@@ -1,0 +1,102 @@
+# Swarm robotics & programmable matter
+
+From Claytronics vision to Kilobots, modular reconfigurable robots, particle robots, and 2024 surveys.
+
+<Callout type="warning">
+The programmable-matter north star (millions of modules reshaping 3D objects on demand) is **still largely unrealized**. Treat demos as proofs of principle, not product catalogs.
+</Callout>
+
+## Story arc
+
+```
+Goldstein Claytronics (2005) → Kilobot platform + swarm (2012–2014)
+  → Modular surveys (Seo/Yim 2019, Thalamy 2019)
+  → Particle robotics (2019) → ACM CSUR / MRR mechanisms (2024) → underwater ModCube demos
+```
+
+## 1. Vision — Programmable Matter (Goldstein et al. 2005)
+
+**Goldstein, Campbell, Mowry**, *Programmable Matter*, *IEEE Computer*  
+[DOI](https://doi.org/10.1109/MC.2005.198) · [Project page](http://www.cs.cmu.edu/~claytronics/papers/goldstein-computer05.html)
+
+- Ensembles of tiny robots (“**catoms**”) form and reshape 3D objects.
+- Goal is synthetic reality: physical artifacts that mimic shape, motion, appearance, touch — not teleportation of atoms.
+- Hardware, algorithms, and power are co-equal challenges.
+- Hub: [CMU Claytronics](http://www.cs.cmu.edu/~claytronics/index.html)
+
+**Beginner takeaway:** Clear, honest vision piece — aspirational north star.
+
+## 2. Visible algorithmic self-assembly — Kilobots (2014)
+
+**Rubenstein, Cornejo, Nagpal**, *Programmable self-assembly in a thousand-robot swarm*, *Science*  
+[DOI](https://doi.org/10.1126/science.1254295) · [Harvard news](https://seas.harvard.edu/news/self-organizing-thousand-robot-swarm)
+
+- **1,024 Kilobots** form programmed 2D shapes using only local communication.
+- Robots are simple, noisy, unreliable — collective algorithms still work.
+- Seed robots define a coordinate origin; others edge-follow and fill the shape.
+- Separates “smart global result” from “dumb local rules.”
+
+**Platform paper:** Rubenstein, Ahler, Nagpal — [DOI](https://doi.org/10.1016/j.robot.2013.08.006)  
+Designed for hundreds–thousands of units (~\$14 parts originally); vibration locomotion + IR messaging.
+
+**Watch:** [Thousand-Kilobot demo](https://www.youtube.com/watch?v=xK54Bu9HFRw) · [Intro to Kilobot](https://www.youtube.com/watch?v=ISMwLCFwgK4)
+
+## 3. Modular reconfigurable robotics — Seo, Paik, Yim (2019)
+
+**Seo, Paik, Yim**, *Modular Reconfigurable Robotics*, *Annu. Rev. Control Robot. Auton. Syst.*  
+[DOI](https://doi.org/10.1146/annurev-control-053018-023834)
+
+- Taxonomy: lattice, chain, mobile, hybrid.
+- Promise: versatility, robustness, potentially lower cost vs fixed morphology.
+- Hardware (connectors, actuators) and software (planning, control) are equally hard.
+- Open bar: “Can it form a wrench that turns a bolt?”
+
+## 4. Algorithms for self-reconfiguration — Thalamy et al. (2019)
+
+**Thalamy, Piranda, Bourgeois**, *A survey of autonomous self-reconfiguration methods…*, *Robotics and Autonomous Systems*  
+[DOI](https://doi.org/10.1016/j.robot.2019.07.012)
+
+- Algorithm-first companion to hardware surveys.
+- Current algorithms are far from visionary requirements (huge module counts, speed, reliability).
+- Emphasizes distributed methods that scale.
+
+## 5. Another philosophy — Particle robotics (2019)
+
+**Li, Batra, Brown, et al. (incl. Rus, Lipson)**, *Particle robotics…*, *Nature*  
+[DOI](https://doi.org/10.1038/s41586-019-1022-9) · [Lab page](https://www.creativemachineslab.com/particle-robotics.html)
+
+- Loosely coupled units that only expand/contract.
+- Collective locomotion emerges from statistical-mechanics-style coordination.
+- Works even with ~20% malfunctioning particles in demos.
+- Different from precise docking modular robots — embrace disorder + coupling.
+
+## 6. 2024–2025 landscape
+
+| Source | Link | Hook |
+|--------|------|------|
+| Chafik et al. 2024 — ACM CSUR programmable matter | [DOI](https://doi.org/10.1145/3653671) | Materials + devices + control snapshot |
+| Decoding Modular Reconfigurable Robots | [arXiv:2310.09743](https://arxiv.org/abs/2310.09743) · [IJRR DOI](https://doi.org/10.1177/02783649241283847) | Mechanism-centric taxonomy |
+| Reconfiguration strategies (JIRS 2024) | [DOI](https://doi.org/10.1007/s10846-024-02067-6) | Strategy layer above hardware |
+| ModCube / RS-ModCubes underwater | [arXiv:2409.15627](https://arxiv.org/abs/2409.15627) | Self-assembling cubes attempting real environments |
+
+### arXiv watch (verify before deep citation)
+
+- Cubic modular robots with realistic constraints: [arXiv HTML](https://arxiv.org/html/2405.15724)
+- Moving Matter (single robot rearranging blocks): [arXiv HTML](https://arxiv.org/html/2506.23333)
+- MODUR modular dual-reconfigurable robot: [arXiv HTML](https://arxiv.org/html/2510.13356v1)
+
+## DNA sticky ends vs robot local messages
+
+| | DNA sticky ends | Robot local messages |
+|---|-----------------|----------------------|
+| “Glue” | Sequence complementarity | IR / radio / contact |
+| Scale | Nanometers | Centimeters+ |
+| Failure mode | Misfolds, kinetic traps | Noise, localization error, battery |
+| Alike | Local rules → global structure; seeds matter; errors are first-class |
+
+## Practice on this track
+
+- [Experiment 5](/experiments) — Kilobot / swarm simulation
+- [Experiment 8](/experiments) — grid reconfiguration cost
+- [Experiment 1](/experiments) or [7](/experiments) — magnet / patchy physical analogues
+- Week 2 Track B in [Learn](/learn)
