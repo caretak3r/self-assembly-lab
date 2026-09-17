@@ -10,6 +10,15 @@ Buy what is standard. Outsource what is exotic. Do not invent a factory org char
 
 A **bill of materials (BOM)** lists every part, quantity, vendor, and approx cost. Even a toy module deserves one.
 
+```mermaid
+flowchart TD
+  BOM["BOM categories"] --> MECH["Mechanical structure"]
+  BOM --> FAST["Fasteners and magnets"]
+  BOM --> ELEC["Electronics and power"]
+  BOM --> PCB["PCBs and fab services"]
+  BOM --> LAB["Lab reagents and cores"]
+```
+
 | Category | Examples | Starter sources |
 |----------|----------|-----------------|
 | Mechanical structure | 3D-print filament, acrylic, plywood | Local makerspace, filament shops |

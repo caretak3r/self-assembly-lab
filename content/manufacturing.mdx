@@ -8,13 +8,13 @@ This page teaches **how to begin building related machinery and kits** — modul
 
 ## The real ladder (idea → prototype → small batch)
 
-```
-Idea / sketch
-  → CAD + local rules on paper or in simulation
-  → Single module prototype (print / laser / breadboard)
-  → 5–20 unit small batch (iterate connectors + firmware)
-  → Optional PCB revision via a fab house
-  → Document BOM + open designs
+```mermaid
+flowchart TD
+  A["Idea / sketch"] --> B["CAD + local rules"]
+  B --> C["Single module prototype"]
+  C --> D["5-20 unit small batch"]
+  D --> E["Optional PCB revision"]
+  E --> F["Document BOM + open designs"]
 ```
 
 Skip “scale to millions” fantasies until you can make **ten** reliable units.

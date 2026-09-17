@@ -1,5 +1,5 @@
 import { useMDXComponents as getThemeComponents } from 'nextra-theme-docs'
-import { Callout } from 'nextra/components'
+import { Callout, Mermaid } from 'nextra/components'
 import { YouTube } from './components/YouTube'
 import { PubImg } from './components/PubImg'
 
@@ -9,6 +9,7 @@ export function useMDXComponents(components?: Record<string, unknown>) {
   return {
     ...themeComponents,
     Callout,
+    Mermaid,
     YouTube,
     PubImg,
     ...components
