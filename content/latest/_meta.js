@@ -1,5 +1,6 @@
 export default {
   index: 'About digests',
+  '2026-09-30': '2026-09-30 digest',
   '2026-09-29': '2026-09-29 digest',
   '2026-09-28': '2026-09-28 digest',
   '2026-09-25': '2026-09-25 digest',
