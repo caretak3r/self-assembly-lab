@@ -1,0 +1,73 @@
+# Digest — 2026-10-05
+
+*Curated America/New_York (ET). Prefer arXiv / open sources. Verified via arXiv Atom API keyword/category sweeps and Crossref.*  
+*Focus: roughly since the [2026-10-02](/latest/2026-10-02) digest (Fri→Mon). Weekend arXiv submissions were not yet visible at intake time.*
+
+<Callout type="warning">
+Frame these as **frontier progress**, not finished technology. Applications remain mostly lab-scale or simulation-scale.
+</Callout>
+
+## Highlights
+
+
+### 1. Engineering conditional peptide self-assembly using AlphaFold
+- **Authors:** Helen Futty, Sofia Chinelli, Ravi R. Sonani, Tomás S. Plivelic, Annela Seddon, Edward H. Egelman, Andrew R. Thomson, Dave J. Adams
+- **Date / venue:** Cell Reports Physical Science, October 2026 issue (preprint on ChemRxiv, 2026-06-15)
+- **Link:** https://doi.org/10.1016/j.xcrp.2026.103551 (open preprint: https://doi.org/10.26434/chemrxiv.15004727/v1)
+- **Tidbits:**
+  - Uses AlphaFold Multimer confidence scores as a stand-in for "how likely are these peptides to assemble."
+  - Designs *pairs* of peptides that stay floppy and unstructured alone but form tape-like nanostructures only when mixed.
+  - The trick is selecting for co-assembly **and** against self-assembly of each component at the same time.
+  - Validated with circular dichroism, small-angle X-ray scattering, and cryo-EM.
+  - Limitation stated by the authors: AlphaFold predicts molecular packing, not how sheets stack into bigger structures.
+- **Why a beginner should care:** It's a clear example of "design the parts so the structure only appears when the right partners meet," which is the core idea behind programmable self-assembly.
+- **Media:** Cryo-EM / SAXS figures in the paper.
+
+### 2. Migrating cell clusters as active droplets with asymmetric shape and contact angles
+- **Authors:** Hanno I. Hennighausen, Jaime A. Espina, Elias H. Barriga, Ricard Alert
+- **Date / venue:** arXiv preprint, submitted 2026-10-02 (cond-mat.soft / physics.bio-ph)
+- **Link:** https://arxiv.org/abs/2610.03536
+- **Tidbits:**
+  - Clusters of frog neural crest cells migrate together, and the model treats them as droplets that "wet" the surface.
+  - Experiments show the clusters are lopsided: a lower contact angle at the front than at the back.
+  - Asymmetric pulling forces create a pressure gradient inside the tissue, which (via the Young–Laplace law) bends the top surface unevenly.
+  - Fitting the shape lets them estimate the tissue's viscosity from a height profile alone.
+- **Why a beginner should care:** Living groups of cells can be understood with the same surface-tension physics as a raindrop on a window.
+
+### 3. Decentralized power-optimal coordination for spacecraft swarms using magnetorquers
+- **Authors:** Yuta Takahashi, Shin-ichiro Sakai
+- **Date / venue:** arXiv preprint, submitted 2026-10-01 (cs.RO / eess.SY)
+- **Link:** https://arxiv.org/abs/2610.02118
+- **Tidbits:**
+  - Swarms of small spacecraft could hold the shape of a structure larger than any single rocket can launch.
+  - Magnetic coils (magnetorquers) let them push and pull on each other with no propellant, using solar power.
+  - Every craft affects every other in range, so they split interactions across carrier frequencies and solve it decentrally.
+  - A closed-loop simulation with a thousand spacecraft confirms the controller.
+- **Why a beginner should care:** It's "modular robots assembling a structure" scaled up to orbit, and it shows why local rules plus coordination matter.
+- **Caveat:** Simulation only.
+
+### 4. Toward controlling biology with language: prompt-conditioned interventions for cells, organoids, and biobots
+- **Authors:** Nam H. Le, Douglas Blackiston, Michael Levin, Josh Bongard
+- **Date / venue:** arXiv preprint, submitted 2026-09-30
+- **Link:** https://arxiv.org/abs/2610.02247
+- **Tidbits:** Learns a natural-language-to-intervention mapping for xenobots entirely from an archive of past experiments, using a vision-language model as the judge; 80.0% held-out accuracy vs a 66.7% chance baseline.
+- **Why a beginner should care:** Xenobots are self-organizing multicellular constructs; this asks whether you can "describe the behavior you want" instead of hand-designing it.
+- **Caveat:** Offline evaluation on archived data; no new wet-lab tests.
+
+### Stretch (theory / adjacent)
+- **TUR violation in an active magneto gyrator** (2026-10-02): https://arxiv.org/abs/2610.03366 — an active-particle heat engine model that claims high efficiency with low power fluctuations (theory; bold claims, read critically).
+- **Discontinuous buckling from cytoplasmic mechanics in vertex models of epithelia** (2026-10-02): https://arxiv.org/abs/2610.03239
+- **ParABS system and chromosome organization in *C. crescentus*** (2026-10-02): https://arxiv.org/abs/2610.03118
+- **Surface charge–potential relation for spherical particles in electrolytes** (2026-10-02): https://arxiv.org/abs/2610.03613 — useful background for colloidal assembly.
+
+---
+
+## Safe classroom / discussion follow-ons
+
+
+1. **"Only together" puzzle pieces:** Cut paper shapes so no single shape tiles with copies of itself, but two different shapes interlock into a strip. Discuss how the peptide paper (item 1) designs against self-assembly and for co-assembly. Paper and scissors only.
+2. **Lopsided droplet on a tilt:** Put a water drop (a little dish soap optional) on a clean plastic lid, tilt it slowly, and sketch the front and rear contact angles before it slides. Compare with the asymmetric cell clusters in item 2. Water only, no chemicals beyond household soap.
+
+---
+
+*Corpus mirror: `/workspace/self-assembly-corpus/digests/2026-10-05.md`.*
