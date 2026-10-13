@@ -1,0 +1,97 @@
+# Digest — 2026-10-06
+
+*Curated America/New_York (ET). Prefer arXiv / open sources. Verified via arXiv Atom API keyword/category sweeps and Crossref.*  
+*Focus: roughly since the [2026-10-05](/latest/2026-10-05) digest; arXiv submissions visible through 2026-10-05.*
+
+<Callout type="warning">
+Frame these as **frontier progress**, not finished technology. Applications remain mostly lab-scale or simulation-scale.
+</Callout>
+
+## At a glance
+
+```mermaid
+flowchart LR
+  A[Layered platelet] --> B[Warm to 37 C]
+  B --> C[Weak layers melt out]
+  C --> D[Hollow shapes]
+  D --> E[Cool down]
+  E --> F[Platelet rebuilds and heals]
+```
+
+*Diagram: original illustration of this digest's key idea (not from the papers).*
+
+<PubImg
+  src="/images/latest/2026-10-06-top-finds.svg"
+  alt="Schematic of the top three finds in the 2026-10-06 digest: parts, driver, and result for each"
+  caption="Today's top finds at a glance: what the parts are, what drives them, and what forms."
+  credit="Illustrative schematic by Self-Assembly Lab, not data from the papers"
+  width={900}
+  height={330}
+/>
+
+## Highlights
+
+### 1. Thermally programmed disassembly and reconstruction of 2D polymer platelets via melting-governed crystallization-driven self-assembly
+- **Authors:** Emre Turan, Maria C. Arno
+- **Date / venue:** Nature Communications, published 2026-10-03 (open access)
+- **Link:** https://doi.org/10.1038/s41467-026-77973-4
+- **Tidbits:**
+  - "Crystallization-driven self-assembly" grows flat polymer platelets by letting polymer chains crystallize onto seed crystals in solution.
+  - The authors show a platelet's melting temperature tracks its thickness, matching the Gibbs–Thomson rule that thinner crystals melt at lower temperatures.
+  - They build layered platelets whose layers have different melting points, so a mild warm-up to 37 °C melts out the weak parts within minutes and leaves uniform hollow shapes.
+  - On cooling, the released chains recrystallize in place, so the platelet framework can rebuild and self-heal.
+- **Why a beginner should care:** It treats melting as a design knob: you can program which part of a self-assembled structure comes apart first, and get it to reassemble afterward.
+- **Media:** Microscopy and calorimetry figures in the open-access paper.
+- **Caveat:** Specialist polymer chemistry; the 37 °C trigger hints at biomedical uses, but none are demonstrated here.
+
+### 2. Self-assembly Monte Carlo reveals localized entanglement in giant polymer melts
+- **Authors:** Enrico Fornasa, Francesco Slongo, Cristian Micheletti
+- **Date / venue:** arXiv preprint, submitted 2026-10-05 (cond-mat.soft)
+- **Link:** https://arxiv.org/abs/2610.06498
+- **Tidbits:**
+  - Simulating long tangled polymer chains is slow because untangling takes longer as chains grow.
+  - Their trick is to let chains break and reconnect locally (a "self-assembly ensemble") while keeping the number of chains fixed.
+  - Equilibration time grows roughly linearly with system size, letting them simulate about 1.1 billion monomers.
+  - Entanglements turn out to be localized knots and links, not one giant global tangle.
+- **Why a beginner should care:** Changing the rules of a simulation, here letting pieces assemble and disassemble, can make an impossible computation practical.
+- **Caveat:** Lattice-model computation.
+
+### 3. Activated coarsening of motility-induced phase separation in random environments
+- **Authors:** Parameshwaran A, Bhaskar Sen Gupta
+- **Date / venue:** arXiv preprint, submitted 2026-10-03 (cond-mat.soft)
+- **Link:** https://arxiv.org/abs/2610.04373
+- **Tidbits:**
+  - Self-propelled particles that only repel each other still clump into dense and dilute regions (motility-induced phase separation, or MIPS).
+  - In a clean box the clumps grow steadily, with size scaling like time to the 1/3 power.
+  - Adding frozen randomness, either random pushes on position or random twists on direction, slows growth to at most logarithmic.
+  - Random forces trap particles in "sinks"; random twists act like scattered spin that weakens how long particles keep heading one way.
+- **Why a beginner should care:** Real swimmers and swarm robots move through messy terrain, and this shows the mess can stall self-organization.
+- **Caveat:** Simulation only.
+
+### 4. Shape transformations and rupture of a vesicle driven by an encapsulated active particle
+- **Authors:** Gaurav Kumar, Abhishek Chaudhuri, Rajeev Kapri, Anil Kumar Dasanna
+- **Date / venue:** arXiv preprint, submitted 2026-10-05 (cond-mat.soft)
+- **Link:** https://arxiv.org/abs/2610.05836
+- **Tidbits:** A single self-propelled particle trapped inside a lipid bubble deforms it most at medium activity; too much activity ruptures the membrane before big shape changes develop, and surface tension regulates the effect. Coarse-grained simulation.
+- **Why a beginner should care:** Self-assembled membranes are soft containers, and an "engine" inside can reshape or break them.
+
+### 5. Visual swarm navigation via deep reinforcement learning and evolutionary hybrid design
+- **Authors:** Álvaro Díez, Fidel Aznar
+- **Date / venue:** arXiv preprint, submitted 2026-10-05 (cs.RO / cs.MA)
+- **Link:** https://arxiv.org/abs/2610.06400
+- **Tidbits:** Camera-only swarm controllers trained with reinforcement learning plus evolutionary tuning; the cross-entropy-method controller visited 36.20% more regions than the CMA-ES one, and the best camera policy matched distance-sensor methods with 31.40% less energy (simulation).
+- **Why a beginner should care:** Cheap sensors and small brains can still produce useful group behavior.
+
+### Stretch (theory / adjacent)
+- **Min-max uniform circle formation by asynchronous mobile robots** (2026-10-04): https://arxiv.org/abs/2610.05008, algorithms for identical, silent robots to form an evenly spaced circle while minimizing the longest walk.
+- **Morph-aware computing** (2026-10-02): https://arxiv.org/abs/2610.03985, a programming model and compiler that keep modular robots and networks from messaging a neighbor that has detached.
+- **Metastability and nucleation of bubbles in active chiral systems** (2026-10-04): https://arxiv.org/abs/2610.05145
+- **A taxonomy on collective awareness** (2026-10-05): https://arxiv.org/abs/2610.06427, for multi-robot teams.
+- **Hydrodynamics of perceptual matter** (2026-10-05): https://arxiv.org/abs/2610.06249, collective motion without alignment rules (dense theory).
+
+---
+
+## Safe classroom / discussion follow-ons
+
+1. **Human circle formation (inspired by the circle-formation paper):** Students scatter in a gym or field. Each may only look at classmates, not talk. Goal: form an evenly spaced circle around a marked center. Record the longest distance anyone walked, then repeat with a rule agreed in advance (for example "move straight outward to the circle, then spread out") and compare. No materials beyond tape and a measuring tape.
+2. **Clumping with obstacles (item 3), simulation only:** In a free browser tool or a short Python script, run active Brownian particles that only repel, first in an empty box, then with randomly scattered fixed obstacles. Compare how big the largest clump gets after the same run time.
