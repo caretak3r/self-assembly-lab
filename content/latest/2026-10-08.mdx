@@ -1,0 +1,89 @@
+# Digest — 2026-10-08
+
+*Curated America/New_York (ET). Prefer arXiv / open sources. Verified via arXiv "new" listings (cond-mat.soft, cs.RO, cs.MA, cond-mat.mtrl-sci, physics.bio-ph), arXiv abstract pages, and Crossref.*  
+*Focus: roughly since the [2026-10-07](/latest/2026-10-07) digest; arXiv submissions announced 2026-10-08 plus journal articles published 2026-10-05 to 2026-10-08.*
+
+<Callout type="warning">
+Frame these as **frontier progress**, not finished technology. Applications remain mostly lab-scale or simulation-scale.
+</Callout>
+
+## Highlights
+
+### 1. The Soft Circuits Toolkit: Teaching Mechano-Fluidic Logic for Soft Robotics
+- **Authors:** Catharina M. van Riet, Shibo Zou, Franciscus L.M. Delbressine, Anke van Oosterhout, Johannes T.B. Overvelde
+- **Date / venue:** Soft Robotics, published 2026-10-07 (CC BY-NC 4.0)
+- **Link:** https://doi.org/10.1177/21695172261462701
+- **Tidbits:**
+  - Soft robots are increasingly controlled by air or fluid flowing through soft parts, with no electronics or software at all.
+  - The toolkit is a set of 17 completely soft component types that act like fluid versions of resistors, capacitors, diodes, and transistors.
+  - Students snap them together into fluidic circuits that make a soft robot do things on its own.
+  - It went through two design rounds and four user tests; 25 technical-university students found it engaging, easy to learn, and good for problem solving.
+  - All fabrication files are open source, and it comes with a manual and a companion website.
+- **Why a beginner should care:** It is one of the few resources built specifically to teach "physical control," where the body and its plumbing do the thinking, and you can build it yourself.
+- **Media:** Component photos and circuit examples in the paper; open-source fabrication files.
+- **Caveat:** Tested with university students, not younger learners; fabrication still needs soft-material casting.
+
+### 2. Toward Mechanical Intelligence in Robotics
+- **Authors:** Xinyi Yang, Xinyi Ding, Tianyu Wang, Daniel I. Goldman, Shucong Li, Bolei Deng
+- **Date / venue:** Advanced Robotics Research, published 2026-10-06 (perspective, CC BY 4.0)
+- **Link:** https://doi.org/10.1002/adrr.70173
+- **Tidbits:**
+  - A robot's body is not just a passive thing the computer moves around; its springs, joints, and materials can process inputs on their own.
+  - The authors call this "mechanical intelligence" and break it into three operations: filtering (which inputs get through), routing (where signals travel), and switching (when the system changes state).
+  - They propose design variables and ways to measure each operation, with examples from walking, crawling, and grasping.
+  - Responsive materials can turn things like heat or light into mechanical signals and even harvest energy to move.
+  - The goal is a hybrid, where the body handles some sensing and decisions and the computer handles the rest.
+- **Why a beginner should care:** It gives a simple vocabulary for one of the core ideas behind programmable matter: putting the "smarts" into the material and shape.
+- **Caveat:** A perspective and framework, not a new device; most examples are lab robots.
+
+### 3. Self-organization in Chiral Gliding Filaments
+- **Authors:** Josue Yaedalm Son, Hyejeong Kim, Vahid Nasirimarekan
+- **Date / venue:** arXiv preprint, submitted 2026-10-07 (cond-mat.soft)
+- **Link:** https://arxiv.org/abs/2610.10099
+- **Tidbits:**
+  - Filamentous cyanobacteria build mats that can stretch for kilometers in lakes and ponds, but how they organize has been unclear.
+  - The team watched filaments squeezed into a nearly flat chamber.
+  - Each filament glides while twisting (that's the "chiral" part), which makes neighbors tangle actively.
+  - The tangling makes the network contract quickly into dense clumps, and the team measured the force at single contact points to show it adds up to real contractile stress.
+  - They suggest the twisting glide evolved as a way to maximize contacts and drive large-scale organization.
+- **Why a beginner should care:** It is living self-assembly: a simple motion rule at the level of one filament produces a structure millions of times bigger.
+- **Caveat:** Lab observations in confinement; the link to real-world mats is a hypothesis.
+
+### 4. Architecture-Driven Supramolecular Assembly in Bottlebrush Hydrogels
+- **Authors:** Xiaoxiao Ma, Baiqiang Huang, Jinchang Zhu, Ka Un Lao, Li-Heng Cai
+- **Date / venue:** ACS Applied Materials & Interfaces, published 2026-10-08 (CC BY 4.0)
+- **Link:** https://doi.org/10.1021/acsami.6c12705
+- **Tidbits:**
+  - Usually, to make molecules stick together into a gel, chemists make the sticky bits stronger or add more of them.
+  - Here the trick is shape: "bottlebrush" polymers, a backbone densely covered in short side chains like a bottle brush.
+  - Weak stacking between tetrazine groups that can't gel ordinary straight polymers is enough to gel the bottlebrush version, with no permanent crosslinks.
+  - The gels hold up to about 65 °C, turn liquid when sheared and solid again at rest, and fall apart when the tetrazines are switched off.
+  - In mice the gels caused very little scar-tissue buildup compared with ordinary PEG gels.
+- **Why a beginner should care:** It shows that molecular architecture, not just chemistry, can be a self-assembly design knob.
+- **Caveat:** Early biomedical results in animals; human uses are speculative.
+
+### 5. Autonomous Droplet Navigation via Model-Based Reinforcement Learning
+- **Authors:** Rajneesh Anand, Mayuresh V. Kothare
+- **Date / venue:** arXiv preprint, submitted 2026-10-03 (cs.RO); accepted at an IROS 2026 workshop on self-driving labs
+- **Link:** https://arxiv.org/abs/2610.08852
+- **Tidbits:** A two-axis tilting board coated with a thin silicone oil film steers a liquid droplet, watched by an overhead camera. A learning controller trained on only 50 to 150 real runs (no simulator) navigated new shapes it had never seen, and on its own discovered a wiggling strategy to free the droplet when it got stuck. Full training took under 90 minutes.
+- **Why a beginner should care:** Handling soft, sticky, unpredictable matter is a major gap for robots, and this setup is simple enough to imagine building.
+- **Caveat:** Workshop paper; a single droplet on a controlled surface.
+
+### Stretch (theory / adjacent)
+- **Distributed motion planning for multi-robot systems under topological constraints** (Battocletti, Boskos, Dimarogonas, De Schutter, 2026-10-07): https://arxiv.org/abs/2610.10065, robots coordinate how their paths braid around each other using winding numbers, tested in simulation and on real robots.
+- **Enhancing robotic perception and adaptability through sensor fusion and origami-inspired designs** (2026-10-07): https://arxiv.org/abs/2610.09828, a sub-\$300, sub-2 kg robot whose origami wheels reshape for terrain and tilt its LiDAR.
+- **Phase-controlled lateral forcing of droplets on a vibrating bath** (2026-10-07): https://arxiv.org/abs/2610.10450, steering bouncing droplets by adding a small rocking motion.
+- **Phase diagram of a semiflexible magnetic polymer in three dimensions** (2026-10-06): https://arxiv.org/abs/2610.08958, a simple model of how stiffness and binding proteins shape DNA folding.
+- **Predominantly pentagonal ice bilayers: energetics and self-assembly properties** (Acta Cryst. A, 2026-10-06): https://doi.org/10.1107/s2053273326009629
+
+---
+
+## Safe classroom / discussion follow-ons
+
+1. **Tilt-tray droplet maze (inspired by item 5):** Tape a simple maze of drinking straws onto wax paper on a baking tray. Put a drop of water (add a little food coloring to see it) at the start and tilt the tray by hand to steer it to the finish. Notice when the drop sticks, then try gentle shaking to free it, the same trick the learning robot found on its own. Only water, wax paper, and straws.
+2. **Straw resistors (inspired by item 1):** Fill identical squeeze bottles with water and fit each with a different straw (wide, narrow, long, short, or two in parallel). Time how long each takes to empty when squeezed with similar force. Narrow and long straws resist flow more, just like resistors in an electrical circuit; discuss how soft robots use this to control timing without electronics.
+
+## Key idea of the day
+
+Intelligence doesn't have to live in a computer: twisting bacteria tangle into mats, bottlebrush shapes turn weak sticking into a gel, and soft tubes can act as circuits. Putting the "decisions" into shape and material is a core idea of self-assembly, though most of today's work is still lab-scale.
