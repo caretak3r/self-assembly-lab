@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-label="Schematic of the top three finds for 2026-10-14">
+<rect width="900" height="330" fill="#0f172a"/>
+<text x="20" y="30" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Top finds 2026-10-14: parts, driver, result</text>
+<rect x="20" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="312" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="604" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<circle cx="90" cy="135" r="18" fill="none" stroke="#38bdf8" stroke-width="3"/>
+<path d="M108,135 q20,-14 40,0 t40,0" fill="none" stroke="#38bdf8" stroke-width="3"/>
+<text x="110" y="175" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">tadpole</text>
+<line x1="182" y1="135" x2="200" y2="135" stroke="#f472b6" stroke-width="2"/><path d="M200,130 L210,135 L200,140 z" fill="#f472b6"/>
+<line x1="222" y1="105" x2="262" y2="100" stroke="#f472b6" stroke-width="2"/>
+<line x1="222" y1="105" x2="240" y2="135" stroke="#f472b6" stroke-width="2"/>
+<line x1="262" y1="100" x2="240" y2="135" stroke="#f472b6" stroke-width="2"/>
+<line x1="240" y1="135" x2="272" y2="150" stroke="#f472b6" stroke-width="2"/>
+<line x1="240" y1="135" x2="225" y2="165" stroke="#f472b6" stroke-width="2"/>
+<line x1="240" y1="135" x2="258" y2="178" stroke="#f472b6" stroke-width="2"/>
+<line x1="272" y1="150" x2="225" y2="165" stroke="#f472b6" stroke-width="2"/>
+<line x1="272" y1="150" x2="258" y2="178" stroke="#f472b6" stroke-width="2"/>
+<line x1="225" y1="165" x2="258" y2="178" stroke="#f472b6" stroke-width="2"/>
+<circle cx="222" cy="105" r="6" fill="#38bdf8"/>
+<circle cx="262" cy="100" r="6" fill="#38bdf8"/>
+<circle cx="240" cy="135" r="6" fill="#38bdf8"/>
+<circle cx="272" cy="150" r="6" fill="#38bdf8"/>
+<circle cx="225" cy="165" r="6" fill="#38bdf8"/>
+<circle cx="258" cy="178" r="6" fill="#38bdf8"/>
+<text x="246" y="200" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">heat: network</text>
+<text x="34" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">1</text>
+<text x="34" y="230" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Parts</text><text x="90" y="230" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">DNA tadpoles</text>
+<text x="34" y="258" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Driver</text><text x="90" y="258" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">staples + heat</text>
+<text x="34" y="286" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Result</text><text x="90" y="286" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">reversible gel</text>
+<rect x="340" y="95" width="30" height="80" rx="4" fill="#38bdf8"/>
+<rect x="372" y="95" width="30" height="80" rx="4" fill="#38bdf8"/>
+<text x="371" y="192" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">N = 1: sticks</text>
+<rect x="460" y="95" width="30" height="12" rx="2" fill="#38bdf8"/>
+<rect x="492" y="95" width="30" height="12" rx="2" fill="#38bdf8"/>
+<rect x="460" y="116" width="30" height="12" rx="2" fill="#38bdf8"/>
+<rect x="492" y="116" width="30" height="12" rx="2" fill="#38bdf8"/>
+<rect x="460" y="137" width="30" height="12" rx="2" fill="#38bdf8"/>
+<rect x="492" y="137" width="30" height="12" rx="2" fill="#38bdf8"/>
+<rect x="460" y="158" width="30" height="12" rx="2" fill="#38bdf8"/>
+<rect x="492" y="158" width="30" height="12" rx="2" fill="#38bdf8"/>
+<text x="491" y="192" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">N = 4: releases</text>
+<text x="326" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">2</text>
+<text x="326" y="230" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Parts</text><text x="382" y="230" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Magnetic colloids</text>
+<text x="326" y="258" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Driver</text><text x="382" y="258" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">same M, split N</text>
+<text x="326" y="286" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Result</text><text x="382" y="286" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">~M^2/N contact</text>
+<rect x="632" y="120" width="12" height="4" fill="#38bdf8"/>
+<rect x="646" y="120" width="12" height="4" fill="#38bdf8"/>
+<rect x="660" y="120" width="12" height="4" fill="#38bdf8"/>
+<rect x="632" y="134" width="12" height="4" fill="#38bdf8"/>
+<rect x="646" y="134" width="12" height="4" fill="#38bdf8"/>
+<rect x="660" y="134" width="12" height="4" fill="#38bdf8"/>
+<rect x="632" y="148" width="12" height="4" fill="#38bdf8"/>
+<rect x="646" y="148" width="12" height="4" fill="#38bdf8"/>
+<rect x="660" y="148" width="12" height="4" fill="#38bdf8"/>
+<text x="652" y="192" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">water</text>
+<rect x="700" y="120" width="28" height="4" fill="#38bdf8"/>
+<rect x="700" y="128" width="28" height="4" fill="#38bdf8"/>
+<rect x="700" y="136" width="28" height="4" fill="#38bdf8"/>
+<rect x="700" y="144" width="28" height="4" fill="#38bdf8"/>
+<rect x="700" y="152" width="28" height="4" fill="#38bdf8"/>
+<text x="714" y="192" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">salt</text>
+<rect x="771" y="157" width="10" height="3" fill="#38bdf8" transform="rotate(139 776 158)"/>
+<rect x="764" y="143" width="10" height="3" fill="#38bdf8" transform="rotate(154 769 144)"/>
+<rect x="786" y="160" width="10" height="3" fill="#38bdf8" transform="rotate(148 791 161)"/>
+<rect x="760" y="158" width="10" height="3" fill="#38bdf8" transform="rotate(3 765 159)"/>
+<rect x="786" y="136" width="10" height="3" fill="#38bdf8" transform="rotate(141 791 137)"/>
+<rect x="770" y="132" width="10" height="3" fill="#38bdf8" transform="rotate(120 775 133)"/>
+<rect x="790" y="155" width="10" height="3" fill="#38bdf8" transform="rotate(121 795 156)"/>
+<rect x="781" y="160" width="10" height="3" fill="#38bdf8" transform="rotate(38 786 161)"/>
+<rect x="770" y="160" width="10" height="3" fill="#38bdf8" transform="rotate(38 775 161)"/>
+<rect x="789" y="144" width="10" height="3" fill="#38bdf8" transform="rotate(3 794 145)"/>
+<rect x="760" y="130" width="10" height="3" fill="#38bdf8" transform="rotate(151 765 131)"/>
+<rect x="758" y="139" width="10" height="3" fill="#38bdf8" transform="rotate(7 763 140)"/>
+<rect x="773" y="150" width="10" height="3" fill="#38bdf8" transform="rotate(152 778 151)"/>
+<rect x="780" y="147" width="10" height="3" fill="#38bdf8" transform="rotate(101 785 148)"/>
+<text x="776" y="192" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">more salt</text>
+<rect x="822" y="122" width="12" height="4" fill="#38bdf8"/>
+<rect x="844" y="138" width="12" height="4" fill="#38bdf8"/>
+<rect x="826" y="156" width="12" height="4" fill="#38bdf8"/>
+<text x="838" y="192" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">extreme</text>
+<text x="618" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">3</text>
+<text x="618" y="230" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Parts</text><text x="674" y="230" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Nanoplatelets</text>
+<text x="618" y="258" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Driver</text><text x="674" y="258" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">ionic strength</text>
+<text x="618" y="286" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Result</text><text x="674" y="286" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">4 assembly states</text>
+<text x="880" y="326" text-anchor="end" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="10">Illustrative schematic, not paper data</text></svg>
