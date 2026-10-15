@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-label="Schematic of the top three finds for 2026-10-15">
+<rect width="900" height="330" fill="#0f172a"/>
+<text x="20" y="30" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Top finds 2026-10-15: parts, driver, result</text>
+<rect x="20" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="312" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="604" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<!-- Panel 1: wave coarsening -->
+<text x="34" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">1</text>
+<text x="56" y="72" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">early: many short wiggles</text>
+<path d="M40,100 q6,-10 12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0 t12,0" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+<line x1="158" y1="115" x2="158" y2="130" stroke="#f472b6" stroke-width="2"/><path d="M153,130 L158,140 L163,130 z" fill="#f472b6"/>
+<text x="56" y="160" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">later: one big synced wave</text>
+<path d="M40,190 q60,-40 120,0 t120,0" fill="none" stroke="#38bdf8" stroke-width="3.5"/>
+<text x="34" y="230" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Parts</text><text x="90" y="230" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">robotic unit cells</text>
+<text x="34" y="258" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Driver</text><text x="90" y="258" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">one-way push rule</text>
+<text x="34" y="286" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Result</text><text x="90" y="286" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">time crystal</text>
+<!-- Panel 2: tangle shaking window -->
+<text x="326" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">2</text>
+<text x="348" y="72" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">shake one thread of a tangle</text>
+<line x1="345" y1="190" x2="560" y2="190" stroke="#94a3b8" stroke-width="1.5"/>
+<line x1="345" y1="190" x2="345" y2="95" stroke="#94a3b8" stroke-width="1.5"/>
+<path d="M350,185 C400,184 420,180 445,110 C470,180 500,184 555,186" fill="none" stroke="#38bdf8" stroke-width="3"/>
+<rect x="420" y="95" width="52" height="95" fill="#f472b6" fill-opacity="0.15"/>
+<text x="446" y="206" text-anchor="middle" fill="#f472b6" font-family="system-ui,sans-serif" font-size="11">sweet spot</text>
+<text x="352" y="206" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">slow</text>
+<text x="530" y="206" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">fast</text>
+<text x="326" y="230" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Parts</text><text x="382" y="230" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">cotton thread tangle</text>
+<text x="326" y="258" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Driver</text><text x="382" y="258" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">shaking frequency</text>
+<text x="326" y="286" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Result</text><text x="382" y="286" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">thread pulls free</text>
+<!-- Panel 3: active condensate climbing gradient -->
+<text x="618" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">3</text>
+<text x="640" y="72" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">activity low to high</text>
+<defs><linearGradient id="act" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#f472b6"/></linearGradient></defs>
+<rect x="625" y="85" width="234" height="16" rx="4" fill="url(#act)"/>
+<circle cx="665" cy="150" r="5" fill="#38bdf8"/><circle cx="676" cy="146" r="5" fill="#38bdf8"/><circle cx="670" cy="159" r="5" fill="#38bdf8"/><circle cx="682" cy="156" r="5" fill="#38bdf8"/><circle cx="660" cy="162" r="5" fill="#38bdf8"/><circle cx="688" cy="146" r="5" fill="#38bdf8"/><circle cx="676" cy="168" r="5" fill="#38bdf8"/>
+<line x1="705" y1="157" x2="770" y2="157" stroke="#f472b6" stroke-width="2"/><path d="M770,152 L780,157 L770,162 z" fill="#f472b6"/>
+<circle cx="810" cy="150" r="5" fill="#38bdf8"/><circle cx="821" cy="147" r="5" fill="#38bdf8"/><circle cx="815" cy="160" r="5" fill="#38bdf8"/><circle cx="828" cy="158" r="5" fill="#38bdf8"/>
+<circle cx="842" cy="135" r="4" fill="#38bdf8" fill-opacity="0.6"/><circle cx="850" cy="176" r="4" fill="#38bdf8" fill-opacity="0.6"/>
+<text x="740" y="200" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">droplet climbs, may split</text>
+<text x="618" y="230" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Parts</text><text x="674" y="230" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">sticky swimmers</text>
+<text x="618" y="258" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Driver</text><text x="674" y="258" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">activity gradient</text>
+<text x="618" y="286" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">Result</text><text x="674" y="286" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="600">moving condensate</text>
+<text x="20" y="324" fill="#64748b" font-family="system-ui,sans-serif" font-size="10">Illustrative schematic by Self-Assembly Lab; not data from the papers.</text>
+</svg>
