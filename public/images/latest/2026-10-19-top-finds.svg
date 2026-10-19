@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-label="Schematic of the top three finds for 2026-10-19">
+<rect width="900" height="330" fill="#0f172a"/>
+<text x="20" y="30" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Top finds 2026-10-19: turn one knob, the whole group changes state</text>
+<rect x="20" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="312" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="604" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<!-- Panel 1: cell packing -->
+<text x="34" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">1</text>
+<text x="56" y="72" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">wing cells: size spread vs. order</text>
+<circle cx="67.5" cy="111.6" r="12.2" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="46.2" cy="153.9" r="9.0" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="44.9" cy="150.8" r="5.4" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="76.9" cy="102.7" r="6.0" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="76.1" cy="186.0" r="6.4" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="59.0" cy="164.0" r="15.4" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="89.1" cy="138.6" r="15.7" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="44.0" cy="189.4" r="8.2" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="52.3" cy="108.0" r="8.4" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="109.4" cy="114.9" r="11.4" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="94.3" cy="136.0" r="11.0" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="45.3" cy="101.6" r="7.3" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="97.8" cy="142.0" r="8.5" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<circle cx="89.8" cy="144.9" r="8.3" fill="#fb923c" fill-opacity="0.55" stroke="#fdba74" stroke-width="1"/>
+<path d="M138,150 L160,150" stroke="#f472b6" stroke-width="2.5"/><path d="M160,145 L170,150 L160,155 z" fill="#f472b6"/>
+<polygon points="199.5,115.5 190.0,121.0 180.5,115.5 180.5,104.5 190.0,99.0 199.5,104.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="218.6,115.5 209.1,121.0 199.5,115.5 199.5,104.5 209.1,99.0 218.6,104.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="237.6,115.5 228.1,121.0 218.6,115.5 218.6,104.5 228.1,99.0 237.6,104.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="256.7,115.5 247.2,121.0 237.6,115.5 237.6,104.5 247.2,99.0 256.7,104.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="209.1,132.0 199.5,137.5 190.0,132.0 190.0,121.0 199.5,115.5 209.1,121.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="228.1,132.0 218.6,137.5 209.1,132.0 209.1,121.0 218.6,115.5 228.1,121.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="247.2,132.0 237.6,137.5 228.1,132.0 228.1,121.0 237.6,115.5 247.2,121.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="266.2,132.0 256.7,137.5 247.2,132.0 247.2,121.0 256.7,115.5 266.2,121.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="199.5,148.5 190.0,154.0 180.5,148.5 180.5,137.5 190.0,132.0 199.5,137.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="218.6,148.5 209.1,154.0 199.5,148.5 199.5,137.5 209.1,132.0 218.6,137.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="237.6,148.5 228.1,154.0 218.6,148.5 218.6,137.5 228.1,132.0 237.6,137.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="256.7,148.5 247.2,154.0 237.6,148.5 237.6,137.5 247.2,132.0 256.7,137.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="209.1,165.0 199.5,170.5 190.0,165.0 190.0,154.0 199.5,148.5 209.1,154.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="228.1,165.0 218.6,170.5 209.1,165.0 209.1,154.0 218.6,148.5 228.1,154.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="247.2,165.0 237.6,170.5 228.1,165.0 228.1,154.0 237.6,148.5 247.2,154.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="266.2,165.0 256.7,170.5 247.2,165.0 247.2,154.0 256.7,148.5 266.2,154.0" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="199.5,181.5 190.0,187.0 180.5,181.5 180.5,170.5 190.0,165.0 199.5,170.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="218.6,181.5 209.1,187.0 199.5,181.5 199.5,170.5 209.1,165.0 218.6,170.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="237.6,181.5 228.1,187.0 218.6,181.5 218.6,170.5 228.1,165.0 237.6,170.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<polygon points="256.7,181.5 247.2,187.0 237.6,181.5 237.6,170.5 247.2,165.0 256.7,170.5" fill="#fde68a" fill-opacity="0.85" stroke="#0f172a" stroke-width="1.5"/>
+<text x="34" y="235" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="13">big size spread: messy packing;</text>
+<text x="34" y="253" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="13">sizes even out: honeycomb order</text>
+<text x="34" y="290" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">fly wing + vertex model, PRX Life</text>
+<!-- Panel 2: anti-synchronized colloid cluster -->
+<text x="326" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">2</text>
+<text x="348" y="72" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">magnetic beads in a spinning field</text>
+<circle cx="465.5" cy="95.8" r="4" fill="#f87171"/>
+<circle cx="452.0" cy="204.9" r="4" fill="#f87171"/>
+<circle cx="392.2" cy="140.8" r="4" fill="#f87171"/>
+<circle cx="443.4" cy="99.0" r="4" fill="#f87171"/>
+<circle cx="499.0" cy="143.9" r="4" fill="#f87171"/>
+<circle cx="400.3" cy="178.1" r="4" fill="#f87171"/>
+<circle cx="481.1" cy="194.0" r="4" fill="#f87171"/>
+<circle cx="504.3" cy="163.7" r="4" fill="#f87171"/>
+<circle cx="455.0" cy="95.4" r="4" fill="#f87171"/>
+<circle cx="486.7" cy="113.5" r="4" fill="#f87171"/>
+<circle cx="431.4" cy="98.1" r="4" fill="#f87171"/>
+<circle cx="403.1" cy="124.3" r="4" fill="#f87171"/>
+<circle cx="481.8" cy="99.9" r="4" fill="#f87171"/>
+<circle cx="394.8" cy="159.1" r="4" fill="#f87171"/>
+<circle cx="502.4" cy="171.0" r="4" fill="#f87171"/>
+<circle cx="413.9" cy="102.2" r="4" fill="#f87171"/>
+<circle cx="472.5" cy="103.7" r="4" fill="#f87171"/>
+<circle cx="407.8" cy="186.8" r="4" fill="#f87171"/>
+<circle cx="503.0" cy="157.6" r="4" fill="#f87171"/>
+<circle cx="474.3" cy="193.0" r="4" fill="#f87171"/>
+<circle cx="503.3" cy="170.7" r="4" fill="#f87171"/>
+<circle cx="485.0" cy="187.0" r="4" fill="#f87171"/>
+<circle cx="404.7" cy="187.0" r="4" fill="#f87171"/>
+<circle cx="496.7" cy="175.9" r="4" fill="#f87171"/>
+<circle cx="394.2" cy="132.1" r="4" fill="#f87171"/>
+<circle cx="474.6" cy="97.1" r="4" fill="#f87171"/>
+<circle cx="440.6" cy="202.1" r="4" fill="#f87171"/>
+<circle cx="413.0" cy="195.4" r="4" fill="#f87171"/>
+<circle cx="498.1" cy="136.9" r="4" fill="#f87171"/>
+<circle cx="472.7" cy="195.4" r="4" fill="#f87171"/>
+<circle cx="455.6" cy="203.5" r="4" fill="#f87171"/>
+<circle cx="406.7" cy="122.8" r="4" fill="#f87171"/>
+<circle cx="503.0" cy="151.4" r="4" fill="#f87171"/>
+<circle cx="412.7" cy="190.1" r="4" fill="#f87171"/>
+<circle cx="503.9" cy="133.7" r="4" fill="#f87171"/>
+<circle cx="394.9" cy="144.6" r="4" fill="#f87171"/>
+<circle cx="428.2" cy="106.5" r="4" fill="#f87171"/>
+<circle cx="496.3" cy="116.1" r="4" fill="#f87171"/>
+<circle cx="490.6" cy="109.2" r="4" fill="#f87171"/>
+<circle cx="408.8" cy="183.0" r="4" fill="#f87171"/>
+<circle cx="440.0" cy="115.2" r="3.6" fill="#86efac"/>
+<circle cx="450.0" cy="115.2" r="3.6" fill="#86efac"/>
+<circle cx="460.0" cy="115.2" r="3.6" fill="#86efac"/>
+<circle cx="425.0" cy="123.9" r="3.6" fill="#86efac"/>
+<circle cx="435.0" cy="123.9" r="3.6" fill="#86efac"/>
+<circle cx="445.0" cy="123.9" r="3.6" fill="#86efac"/>
+<circle cx="455.0" cy="123.9" r="3.6" fill="#86efac"/>
+<circle cx="465.0" cy="123.9" r="3.6" fill="#86efac"/>
+<circle cx="475.0" cy="123.9" r="3.6" fill="#86efac"/>
+<circle cx="420.0" cy="132.6" r="3.6" fill="#86efac"/>
+<circle cx="430.0" cy="132.6" r="3.6" fill="#86efac"/>
+<circle cx="440.0" cy="132.6" r="3.6" fill="#86efac"/>
+<circle cx="450.0" cy="132.6" r="3.6" fill="#86efac"/>
+<circle cx="460.0" cy="132.6" r="3.6" fill="#86efac"/>
+<circle cx="470.0" cy="132.6" r="3.6" fill="#86efac"/>
+<circle cx="480.0" cy="132.6" r="3.6" fill="#86efac"/>
+<circle cx="415.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="425.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="435.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="445.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="455.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="465.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="475.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="485.0" cy="141.3" r="3.6" fill="#86efac"/>
+<circle cx="420.0" cy="150.0" r="3.6" fill="#86efac"/>
+<circle cx="430.0" cy="150.0" r="3.6" fill="#86efac"/>
+<circle cx="440.0" cy="150.0" r="3.6" fill="#86efac"/>
+<circle cx="450.0" cy="150.0" r="3.6" fill="#86efac"/>
+<circle cx="460.0" cy="150.0" r="3.6" fill="#86efac"/>
+<circle cx="470.0" cy="150.0" r="3.6" fill="#86efac"/>
+<circle cx="480.0" cy="150.0" r="3.6" fill="#86efac"/>
+<circle cx="415.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="425.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="435.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="445.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="455.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="465.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="475.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="485.0" cy="158.7" r="3.6" fill="#86efac"/>
+<circle cx="420.0" cy="167.4" r="3.6" fill="#86efac"/>
+<circle cx="430.0" cy="167.4" r="3.6" fill="#86efac"/>
+<circle cx="440.0" cy="167.4" r="3.6" fill="#86efac"/>
+<circle cx="450.0" cy="167.4" r="3.6" fill="#86efac"/>
+<circle cx="460.0" cy="167.4" r="3.6" fill="#86efac"/>
+<circle cx="470.0" cy="167.4" r="3.6" fill="#86efac"/>
+<circle cx="480.0" cy="167.4" r="3.6" fill="#86efac"/>
+<circle cx="425.0" cy="176.1" r="3.6" fill="#86efac"/>
+<circle cx="435.0" cy="176.1" r="3.6" fill="#86efac"/>
+<circle cx="445.0" cy="176.1" r="3.6" fill="#86efac"/>
+<circle cx="455.0" cy="176.1" r="3.6" fill="#86efac"/>
+<circle cx="465.0" cy="176.1" r="3.6" fill="#86efac"/>
+<circle cx="475.0" cy="176.1" r="3.6" fill="#86efac"/>
+<circle cx="440.0" cy="184.8" r="3.6" fill="#86efac"/>
+<circle cx="450.0" cy="184.8" r="3.6" fill="#86efac"/>
+<circle cx="460.0" cy="184.8" r="3.6" fill="#86efac"/>
+<path d="M520,150 A70,70 0 0,0 450,80" fill="none" stroke="#facc15" stroke-width="2.5"/>
+<path d="M444,75 L436,80 L444,85 z" fill="#facc15"/>
+<path d="M426,158 A25,25 0 1,1 474,158" fill="none" stroke="#0f172a" stroke-width="7"/>
+<path d="M426,158 A25,25 0 1,1 474,158" fill="none" stroke="#38bdf8" stroke-width="4"/>
+<path d="M467,156 L481,154 L475,168 z" fill="#38bdf8" stroke="#0f172a" stroke-width="1"/>
+<text x="326" y="235" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="13">yellow: field turns one way;</text>
+<text x="326" y="253" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="13">blue: crystal core turns the other</text>
+<text x="326" y="290" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">simulation result, arXiv:2610.23784</text>
+<!-- Panel 3: swarm vortex and ribbon modes -->
+<text x="618" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">3</text>
+<text x="640" y="72" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">cell microrobots: two swarm shapes</text>
+<circle cx="679.0" cy="150.0" r="3" fill="#a78bfa"/>
+<circle cx="679.3" cy="152.6" r="3" fill="#a78bfa"/>
+<circle cx="677.7" cy="155.3" r="3" fill="#a78bfa"/>
+<circle cx="674.4" cy="157.0" r="3" fill="#a78bfa"/>
+<circle cx="670.3" cy="156.5" r="3" fill="#a78bfa"/>
+<circle cx="666.7" cy="153.4" r="3" fill="#a78bfa"/>
+<circle cx="665.1" cy="148.4" r="3" fill="#a78bfa"/>
+<circle cx="666.6" cy="142.8" r="3" fill="#a78bfa"/>
+<circle cx="671.3" cy="138.6" r="3" fill="#a78bfa"/>
+<circle cx="678.1" cy="137.4" r="3" fill="#a78bfa"/>
+<circle cx="684.9" cy="140.1" r="3" fill="#a78bfa"/>
+<circle cx="689.6" cy="146.5" r="3" fill="#a78bfa"/>
+<circle cx="690.2" cy="155.0" r="3" fill="#a78bfa"/>
+<circle cx="686.0" cy="163.0" r="3" fill="#a78bfa"/>
+<circle cx="677.8" cy="167.8" r="3" fill="#a78bfa"/>
+<circle cx="667.7" cy="167.5" r="3" fill="#a78bfa"/>
+<circle cx="658.8" cy="161.7" r="3" fill="#a78bfa"/>
+<circle cx="654.1" cy="151.6" r="3" fill="#a78bfa"/>
+<circle cx="655.4" cy="139.9" r="3" fill="#a78bfa"/>
+<circle cx="663.1" cy="130.3" r="3" fill="#a78bfa"/>
+<circle cx="675.1" cy="126.0" r="3" fill="#a78bfa"/>
+<circle cx="688.2" cy="128.7" r="3" fill="#a78bfa"/>
+<circle cx="698.2" cy="138.3" r="3" fill="#a78bfa"/>
+<circle cx="701.9" cy="152.3" r="3" fill="#a78bfa"/>
+<circle cx="697.6" cy="166.6" r="3" fill="#a78bfa"/>
+<circle cx="685.9" cy="176.9" r="3" fill="#a78bfa"/>
+<circle cx="670.1" cy="179.6" r="3" fill="#a78bfa"/>
+<circle cx="654.7" cy="173.5" r="3" fill="#a78bfa"/>
+<circle cx="644.5" cy="159.7" r="3" fill="#a78bfa"/>
+<circle cx="643.0" cy="142.1" r="3" fill="#a78bfa"/>
+<circle cx="651.1" cy="125.8" r="3" fill="#a78bfa"/>
+<circle cx="667.1" cy="115.9" r="3" fill="#a78bfa"/>
+<circle cx="686.4" cy="115.8" r="3" fill="#a78bfa"/>
+<circle cx="703.3" cy="126.2" r="3" fill="#a78bfa"/>
+<circle cx="712.6" cy="144.3" r="3" fill="#a78bfa"/>
+<circle cx="710.9" cy="165.2" r="3" fill="#a78bfa"/>
+<text x="652" y="205" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">vortex: travel</text>
+<path d="M722,140 L744,140" stroke="#f472b6" stroke-width="2.5"/><path d="M744,135 L754,140 L744,145 z" fill="#f472b6"/>
+<path d="M754,160 L732,160" stroke="#f472b6" stroke-width="2.5"/><path d="M732,155 L722,160 L732,165 z" fill="#f472b6"/>
+<circle cx="770" cy="112" r="3" fill="#a78bfa"/>
+<circle cx="782" cy="114" r="3" fill="#a78bfa"/>
+<circle cx="794" cy="112" r="3" fill="#a78bfa"/>
+<circle cx="806" cy="114" r="3" fill="#a78bfa"/>
+<circle cx="818" cy="112" r="3" fill="#a78bfa"/>
+<circle cx="830" cy="114" r="3" fill="#a78bfa"/>
+<circle cx="842" cy="112" r="3" fill="#a78bfa"/>
+<circle cx="854" cy="114" r="3" fill="#a78bfa"/>
+<circle cx="770" cy="132" r="3" fill="#a78bfa"/>
+<circle cx="782" cy="134" r="3" fill="#a78bfa"/>
+<circle cx="794" cy="132" r="3" fill="#a78bfa"/>
+<circle cx="806" cy="134" r="3" fill="#a78bfa"/>
+<circle cx="818" cy="132" r="3" fill="#a78bfa"/>
+<circle cx="830" cy="134" r="3" fill="#a78bfa"/>
+<circle cx="842" cy="132" r="3" fill="#a78bfa"/>
+<circle cx="854" cy="134" r="3" fill="#a78bfa"/>
+<circle cx="770" cy="152" r="3" fill="#a78bfa"/>
+<circle cx="782" cy="154" r="3" fill="#a78bfa"/>
+<circle cx="794" cy="152" r="3" fill="#a78bfa"/>
+<circle cx="806" cy="154" r="3" fill="#a78bfa"/>
+<circle cx="818" cy="152" r="3" fill="#a78bfa"/>
+<circle cx="830" cy="154" r="3" fill="#a78bfa"/>
+<circle cx="842" cy="152" r="3" fill="#a78bfa"/>
+<circle cx="854" cy="154" r="3" fill="#a78bfa"/>
+<circle cx="770" cy="172" r="3" fill="#a78bfa"/>
+<circle cx="782" cy="174" r="3" fill="#a78bfa"/>
+<circle cx="794" cy="172" r="3" fill="#a78bfa"/>
+<circle cx="806" cy="174" r="3" fill="#a78bfa"/>
+<circle cx="818" cy="172" r="3" fill="#a78bfa"/>
+<circle cx="830" cy="174" r="3" fill="#a78bfa"/>
+<circle cx="842" cy="172" r="3" fill="#a78bfa"/>
+<circle cx="854" cy="174" r="3" fill="#a78bfa"/>
+<text x="778" y="205" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="11">ribbons: spread</text>
+<text x="618" y="235" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="13">switch the magnetic field input,</text>
+<text x="618" y="253" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="13">the swarm changes shape</text>
+<text x="618" y="290" fill="#64748b" font-family="system-ui,sans-serif" font-size="11">lab and animal tests, Science Advances</text>
+</svg>
