@@ -13,3 +13,6 @@ Local copies under `public/images/` for reliable static hosting. Do not hotlink 
 | `parts-rules-environment.svg` | Self-Assembly Lab | CC0 | Original educational diagram |
 
 Downloaded 2026-09-15 for educational use on this site.
+
+| `latest/2026-10-23-active-phase-separation-sims.png` | [arXiv:2610.30958](https://arxiv.org/abs/2610.30958), Fig. 2 | CC BY 4.0 | Giulia Pisegna, Ramin Golestanian |
+| `latest/2026-10-23-top-finds.svg` | Self-Assembly Lab | CC0 | Original illustrative schematic (not data) |
