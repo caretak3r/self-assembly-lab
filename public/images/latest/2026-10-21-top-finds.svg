@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-label="Schematic of the top three finds for 2026-10-21">
+<rect width="900" height="330" fill="#0f172a"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e2e8f0"/></marker><marker id="ay" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#facc15"/></marker></defs>
+<text x="20" y="30" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="18" font-weight="700">Top finds 2026-10-21: the shape of a part sets how it moves and tangles</text>
+<rect x="20" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="312" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<rect x="604" y="45" width="276" height="270" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="34" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">1</text><text x="52" y="72" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Levitated chiral stars</text>
+<text x="326" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">2</text><text x="344" y="72" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Active polygons in fuel</text>
+<text x="618" y="72" fill="#f472b6" font-family="system-ui,sans-serif" font-size="15" font-weight="700">3</text><text x="636" y="72" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Tumbled rods in a drum</text>
+<path d="M34,92 q15,-6 30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0" stroke="#64748b" fill="none" stroke-width="1.5"/>
+<path d="M34,100 q15,-6 30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0 t30,0" stroke="#64748b" fill="none" stroke-width="1.5"/>
+<path d="M103.3,165.0 Q115.7,165.0 128.0,165.0" stroke="#94a3b8" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M96.7,176.5 Q102.8,187.2 109.0,197.9" stroke="#94a3b8" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M83.4,176.5 Q77.2,187.2 71.0,197.9" stroke="#94a3b8" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M76.7,165.0 Q64.3,165.0 52.0,165.0" stroke="#94a3b8" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M83.3,153.5 Q77.2,142.8 71.0,132.1" stroke="#94a3b8" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M96.7,153.5 Q102.8,142.8 109.0,132.1" stroke="#94a3b8" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="90" cy="165" r="15.2" fill="#94a3b8"/>
+<text x="60" y="225" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12">mirror-symmetric</text><text x="66" y="240" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="12">no spin</text>
+<path d="M238.3,165.0 Q248.5,181.1 263.0,165.0" stroke="#34d399" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M231.7,176.5 Q222.8,193.4 244.0,197.9" stroke="#34d399" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M218.3,176.5 Q199.3,177.3 206.0,197.9" stroke="#34d399" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M211.7,165.0 Q201.5,148.9 187.0,165.0" stroke="#34d399" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M218.3,153.5 Q227.2,136.6 206.0,132.1" stroke="#34d399" stroke-width="7" stroke-linecap="round" fill="none"/><path d="M231.7,153.5 Q250.7,152.7 244.0,132.1" stroke="#34d399" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="225" cy="165" r="15.2" fill="#34d399"/>
+<path d="M180,120 A62,62 0 0 1 270,120" stroke="#facc15" stroke-width="3" fill="none" marker-end="url(#ay)"/>
+<text x="196" y="225" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12">curved arms</text><text x="208" y="240" fill="#facc15" font-family="system-ui,sans-serif" font-size="12">spins</text>
+<text x="34" y="268" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">Broken mirror symmetry makes a</text><text x="34" y="286" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">star spin; arm count sets when it</text><text x="34" y="304" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">slows or reverses as sound gets louder.</text>
+<circle cx="380" cy="150" r="34" fill="#38bdf8" opacity=".12"/>
+<polygon points="397.2,155.3 366.8,162.2 376.0,132.4" fill="#e2e8f0"/>
+<line x1="380" y1="150" x2="408.7" y2="158.9" stroke="#f87171" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="470" cy="130" r="34" fill="#38bdf8" opacity=".12"/>
+<polygon points="454.6,139.3 456.4,118.2 477.0,113.4 487.9,131.6 474.1,147.5" fill="#e2e8f0"/>
+<line x1="470" y1="130" x2="444.3" y2="145.5" stroke="#f87171" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="430" cy="210" r="34" fill="#38bdf8" opacity=".12"/>
+<polygon points="436.5,193.2 446.8,216.5 423.5,226.8 413.2,203.5" fill="#e2e8f0"/>
+<line x1="430" y1="210" x2="440.9" y2="182.0" stroke="#f87171" stroke-width="3" marker-end="url(#ah)"/>
+<circle cx="530" cy="200" r="34" fill="#38bdf8" opacity=".12"/>
+<polygon points="539.7,215.1 521.7,216.0 512.0,200.8 520.3,184.9 538.3,184.0 548.0,199.2" fill="#e2e8f0"/>
+<line x1="530" y1="200" x2="546.2" y2="225.2" stroke="#f87171" stroke-width="3" marker-end="url(#ah)"/>
+<text x="326" y="268" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">Each particle makes a chemical halo.</text><text x="326" y="286" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">Pairs push and pull unequally</text><text x="326" y="304" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">(non-reciprocal); shape only tweaks it.</text>
+<circle cx="690" cy="165" r="58" fill="none" stroke="#64748b" stroke-width="2"/><circle cx="820" cy="165" r="58" fill="none" stroke="#64748b" stroke-width="2"/>
+<path d="M650,150 C700,90 740,200 690,200 C640,200 660,130 715,140 C760,150 700,220 665,185" stroke="#f87171" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M780,175 Q785,150 793,175 Q801,200 809,175 Q817,150 825,175 Q833,200 841,175 Q849,150 857,175" stroke="#34d399" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M640,105 A70,70 0 0 1 740,105" stroke="#e2e8f0" stroke-width="2" fill="none" marker-end="url(#ah)"/><path d="M770,105 A70,70 0 0 1 870,105" stroke="#e2e8f0" stroke-width="2" fill="none" marker-end="url(#ah)"/>
+<text x="652" y="240" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12">straight: knots</text><text x="770" y="240" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12">very curly: fewer</text>
+<text x="618" y="268" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">Built-in curl changes how often a</text><text x="618" y="286" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">tumbled rubber rod knots; length</text><text x="618" y="304" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="12.5">mostly sets how often it locks.</text>
+</svg>
