@@ -1,0 +1,49 @@
+# Modular and swarm robots
+
+Digests like swarm morphogenesis, robotic budding, and the self-folding CurveQuad robot are built mostly from **ordinary electronics and printed parts**. This is the most accessible domain to source.
+
+## What exists today
+
+- **Brains**: cheap microcontrollers (ESP32, Arduino-class boards, RP2040) with radio or infrared links.
+- **Muscles**: small DC and vibration motors, micro servos, and shape-memory or magnetic actuators.
+- **Docking**: neodymium magnets, pogo pins, latches, and printed snap fits.
+- **Bodies**: FDM and resin 3D printing, laser-cut sheet, and flexible PCBs that fold into shape.
+- **Boards**: rigid and flexible PCB prototyping is fast and global.
+
+## Example vendors and services
+
+| Need | Examples (verified links) | Notes |
+|---|---|---|
+| Electronics distributors | [Mouser](https://www.mouser.com/), [Digi-Key](https://www.digikey.com/) | Datasheets, huge catalogs |
+| Learning-friendly boards | [Adafruit](https://www.adafruit.com/), [SparkFun](https://www.sparkfun.com/), [Arduino](https://www.arduino.cc/) | Tutorials alongside parts |
+| Microcontroller makers | [Espressif (ESP32)](https://www.espressif.com/en/products/socs/esp32) | Wi-Fi/Bluetooth chips used in many swarm projects |
+| Motors and small robot parts | [Pololu](https://www.pololu.com/) | Micro gearmotors, drivers, wheels |
+| Magnets with published specs | [K&J Magnetics](https://www.kjmagnetics.com/) | Graded neodymium, pull-force data |
+| Mechanical parts | [McMaster-Carr](https://www.mcmaster.com/) | Fasteners, springs, stock |
+| Rigid PCBs | [JLCPCB](https://jlcpcb.com/), [PCBWay](https://www.pcbway.com/), [OSH Park](https://oshpark.com/) | Small-batch prototypes |
+| Flexible PCBs | [PCBWay flex and rigid-flex](https://www.pcbway.com/flexible.aspx) | The CurveQuad-style "fold the circuit" route |
+| 3D printing services | [Protolabs](https://www.protolabs.com/), [Craftcloud](https://craftcloud3d.com/) | When you don't own a printer |
+| Free design tools | [KiCad](https://www.kicad.org/), [FreeCAD](https://www.freecad.org/), [Onshape](https://www.onshape.com/) | PCB and CAD |
+
+## Maturity
+
+- Parts: **hobbyist** to **industrial**. Everything above ships to individuals in most countries.
+- Swarm or modular robot *platforms*: mostly **university-lab** (open designs, research kits).
+- Self-assembling or self-reproducing robot *products*: **not yet available**.
+
+## Bottlenecks and gaps
+
+- **Connectors** that are small, strong, self-aligning, and pass power and data are still custom for each lab.
+- **Power**: batteries dominate size and weight at small scales, and charging hundreds of robots is a logistics problem.
+- **Cost per unit**: a swarm of 1,000 needs each robot to be cheap, so hand assembly doesn't scale.
+- **Shrinking below a centimeter** pushes you out of hobby parts and into [microfabrication](/supply-chain/microfab).
+
+## What would need to exist for scale-up
+
+Standard, open docking connectors; cheap contract assembly of identical small modules (the way PCB assembly services work now); swarm charging and programming racks; and design rules for folding flex circuits that any PCB house can follow.
+
+## Safety notes
+
+- Strong magnets pinch skin and are dangerous if swallowed. Keep them away from young children.
+- Lithium batteries can catch fire. Use protected cells, a proper charger, and follow [shipping rules](https://www.phmsa.dot.gov/lithiumbatteries).
+- Some radio modules and advanced electronics carry export rules. Hobby parts usually don't, but check before shipping abroad.
