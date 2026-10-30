@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" font-family="Helvetica, Arial, sans-serif">
+  <rect width="560" height="300" fill="#ffffff"/>
+  <text x="280" y="30" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">How many DNA-programmed landing spots got a gold particle?</text>
+  <rect x="60" y="90" width="440" height="60" fill="#eeeeee" stroke="#999"/>
+  <rect x="60" y="90" width="372.7" height="60" fill="#c79a2b"/>
+  <text x="246" y="126" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">about 84.7% filled</text>
+  <text x="466" y="126" text-anchor="middle" font-size="13" fill="#444">empty</text>
+  <g font-size="12" fill="#555">
+    <text x="60" y="170">0%</text><text x="500" y="170" text-anchor="end">100%</text>
+  </g>
+  <text x="280" y="210" text-anchor="middle" font-size="14" fill="#222">2538 patterned sites across six patches</text>
+  <text x="280" y="232" text-anchor="middle" font-size="14" fill="#222">(84.7% is the estimated mean single-particle occupation)</text>
+  <text x="280" y="280" text-anchor="middle" font-size="11" fill="#666">Chart drawn for this digest from numbers stated in the abstract of Kim et al., Nano Letters, doi:10.1021/acs.nanolett.6c02892</text>
+</svg>
