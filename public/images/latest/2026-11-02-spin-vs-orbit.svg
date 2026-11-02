@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#2a7a3b"/></marker>
+    <marker id="b" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b5402a"/></marker>
+  </defs>
+  <rect width="560" height="320" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">Each cell spins one way, the cluster orbits the other way</text>
+  <circle cx="280" cy="170" r="105" fill="none" stroke="#b5402a" stroke-width="3" stroke-dasharray="6 5"/>
+  <path d="M 385 170 A 105 105 0 0 0 280 65" fill="none" stroke="#b5402a" stroke-width="4" marker-end="url(#b)"/>
+  <g fill="#cfe8d2" stroke="#2a7a3b" stroke-width="2">
+    <circle cx="250" cy="150" r="22"/><circle cx="305" cy="145" r="22"/><circle cx="275" cy="195" r="22"/><circle cx="320" cy="195" r="22"/><circle cx="235" cy="200" r="22"/>
+  </g>
+  <g fill="none" stroke="#2a7a3b" stroke-width="2" marker-end="url(#a)">
+    <path d="M 238 136 A 16 16 0 0 1 264 140"/><path d="M 293 131 A 16 16 0 0 1 319 135"/><path d="M 263 181 A 16 16 0 0 1 289 185"/><path d="M 308 181 A 16 16 0 0 1 334 185"/><path d="M 223 186 A 16 16 0 0 1 249 190"/>
+  </g>
+  <text x="40" y="285" font-size="14" fill="#2a7a3b">Small green arrows: every cell spins clockwise</text>
+  <text x="40" y="305" font-size="14" fill="#b5402a">Big red arrow: the whole cluster orbits counterclockwise</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="260" viewBox="0 0 560 260" font-family="Helvetica, Arial, sans-serif">
+  <rect width="560" height="260" fill="#ffffff"/>
+  <text x="280" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#222">How tall are the self-made hBN wrinkle channels?</text>
+  <line x1="60" y1="140" x2="500" y2="140" stroke="#444" stroke-width="2"/>
+  <g font-size="13" fill="#333" text-anchor="middle">
+    <line x1="60" y1="134" x2="60" y2="146" stroke="#444"/><text x="60" y="166">1 nm</text>
+    <line x1="207" y1="134" x2="207" y2="146" stroke="#444"/><text x="207" y="166">10 nm</text>
+    <line x1="353" y1="134" x2="353" y2="146" stroke="#444"/><text x="353" y="166">100 nm</text>
+    <line x1="500" y1="134" x2="500" y2="146" stroke="#444"/><text x="500" y="166">1000 nm</text>
+  </g>
+  <rect x="104" y="100" width="249" height="28" fill="#3b6fb5" opacity="0.85"/>
+  <path d="M 353 100 L 383 114 L 353 128 z" fill="#3b6fb5" opacity="0.85"/>
+  <path d="M 104 100 L 80 114 L 104 128 z" fill="#3b6fb5" opacity="0.85"/>
+  <text x="228" y="92" text-anchor="middle" font-size="14" fill="#3b6fb5">reported range: under 2 nm to over 100 nm</text>
+  <text x="280" y="205" text-anchor="middle" font-size="13" fill="#555">Log scale. Height depends on flake thickness and the surface underneath.</text>
+  <text x="280" y="225" text-anchor="middle" font-size="13" fill="#555">For scale: a DNA double helix is about 2 nm wide.</text>
+</svg>
