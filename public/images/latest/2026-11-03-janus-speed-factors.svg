@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="280" viewBox="0 0 560 280" font-family="sans-serif">
+  <rect width="560" height="280" fill="#ffffff"/>
+  <text x="280" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Two prep steps changed Janus particle speed</text>
+  <text x="280" y="46" text-anchor="middle" font-size="12" fill="#555">Speed relative to the untreated case (1x), as stated in the abstract</text>
+  <line x1="200" y1="70" x2="200" y2="230" stroke="#999" stroke-dasharray="4 3"/>
+  <text x="200" y="248" text-anchor="middle" font-size="12" fill="#555">1x (baseline)</text>
+  <text x="20" y="105" font-size="13" fill="#222">Pt cap pre-exposed</text>
+  <text x="20" y="121" font-size="13" fill="#222">to H2O2 first</text>
+  <rect x="200" y="92" width="240" height="30" fill="#2a9d8f"/>
+  <text x="448" y="112" font-size="14" font-weight="bold" fill="#2a9d8f">2.4x faster</text>
+  <text x="20" y="180" font-size="13" fill="#222">Glass plasma-</text>
+  <text x="20" y="196" font-size="13" fill="#222">cleaned first</text>
+  <rect x="126" y="167" width="74" height="30" fill="#e76f51"/>
+  <text x="210" y="187" font-size="14" font-weight="bold" fill="#e76f51">2.7x slower</text>
+  <text x="280" y="270" text-anchor="middle" font-size="11" fill="#777">Chart drawn by Self-Assembly Lab from numbers in Haroon, Lau, Wirth, arXiv:2611.00274 (abstract)</text>
+</svg>

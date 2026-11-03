@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="320" viewBox="0 0 560 320" font-family="sans-serif">
+  <rect width="560" height="320" fill="#ffffff"/>
+  <text x="280" y="26" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">The trade-off, sketched (not data)</text>
+  <line x1="80" y1="270" x2="510" y2="270" stroke="#333" stroke-width="2"/>
+  <line x1="80" y1="270" x2="80" y2="50" stroke="#333" stroke-width="2"/>
+  <text x="295" y="300" text-anchor="middle" font-size="13" fill="#222">Persistence (keeps moving steadily)</text>
+  <text x="30" y="160" text-anchor="middle" font-size="13" fill="#222" transform="rotate(-90 30 160)">Diversity (changes, adapts)</text>
+  <path d="M100 70 Q 140 240 490 255" fill="none" stroke="#264653" stroke-width="3"/>
+  <circle cx="115" cy="95" r="9" fill="#e9c46a"/>
+  <text x="130" y="88" font-size="12" fill="#444">wobbly, adaptable droplet</text>
+  <circle cx="460" cy="252" r="9" fill="#2a9d8f"/>
+  <text x="330" y="236" font-size="12" fill="#444">steady, predictable droplet</text>
+  <text x="300" y="140" font-size="12" fill="#777">Hard to have both</text>
+</svg>
