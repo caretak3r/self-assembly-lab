@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" font-family="sans-serif">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<circle cx="95" cy="120" r="22" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="124.0" cy="120.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="118.5" cy="137.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="104.0" cy="147.6" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="86.0" cy="147.6" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="71.5" cy="137.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="66.0" cy="120.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="71.5" cy="103.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="86.0" cy="92.4" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="104.0" cy="92.4" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="118.5" cy="103.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="205" cy="175" r="22" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="234.0" cy="175.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="228.5" cy="192.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="214.0" cy="202.6" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="196.0" cy="202.6" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="181.5" cy="192.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="176.0" cy="175.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="181.5" cy="158.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="196.0" cy="147.4" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="214.0" cy="147.4" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="228.5" cy="158.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<text x="150" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Large-large + large-small sticky</text>
+<text x="150" y="265" text-anchor="middle" font-size="14" fill="#222">Compact core-shell clusters</text>
+<text x="150" y="284" text-anchor="middle" font-size="12" fill="#555">small beads keep moving and fill the shell</text>
+<line x1="320" y1="20" x2="320" y2="280" stroke="#ccc" stroke-dasharray="4 4"/>
+<circle cx="400" cy="110" r="22" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="470" cy="170" r="22" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="560" cy="120" r="22" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="520" cy="220" r="22" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="422.0" cy="128.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="434.0" cy="138.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="446.0" cy="148.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="458.0" cy="158.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="492.0" cy="160.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="504.0" cy="152.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="516.0" cy="144.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="528.0" cy="136.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="540.0" cy="128.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="486.0" cy="190.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="494.0" cy="202.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="502.0" cy="212.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="380.0" cy="90.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="368.0" cy="80.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="356.0" cy="70.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="578.0" cy="105.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="590.0" cy="94.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="560.0" cy="148.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="565.0" cy="160.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="540.0" cy="238.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="552.0" cy="250.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="500.0" cy="236.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<circle cx="488.0" cy="246.0" r="7" fill="#e53935" stroke="#b71c1c" stroke-width="1.5"/>
+<text x="480" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#222">Small-small also sticky</text>
+<text x="480" y="265" text-anchor="middle" font-size="14" fill="#222">Extended, branched networks</text>
+<text x="480" y="284" text-anchor="middle" font-size="12" fill="#555">small beads freeze in place (kinetic trapping)</text>
+<circle cx="20" cy="15" r="7" fill="#4caf50"/><text x="32" y="19" font-size="11" fill="#333">large bead</text><circle cx="110" cy="15" r="5" fill="#e53935"/><text x="120" y="19" font-size="11" fill="#333">small bead</text>
+</svg>
