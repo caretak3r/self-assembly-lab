@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" font-family="sans-serif" font-size="14">
+<rect width="720" height="300" fill="#fff"/>
+<text x="360" y="26" text-anchor="middle" font-weight="bold">Drying in a capillary tube: salt piles up at the receding front</text>
+<rect x="40" y="90" width="640" height="90" fill="none" stroke="#345" stroke-width="3"/>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#eaf3ff"/><stop offset="1" stop-color="#7fb0e6"/></linearGradient></defs>
+<rect x="42" y="92" width="458" height="86" fill="url(#g)"/>
+<path d="M500,92 Q470,135 500,178" fill="none" stroke="#235" stroke-width="3"/>
+<text x="590" y="140" text-anchor="middle" fill="#555">air (evaporation)</text>
+<g fill="#e07b2a"><circle cx="90" cy="115" r="6"/><circle cx="150" cy="150" r="6"/><circle cx="230" cy="120" r="6"/><circle cx="300" cy="160" r="6"/><circle cx="360" cy="112" r="6"/><circle cx="410" cy="145" r="6"/><circle cx="445" cy="120" r="6"/><circle cx="460" cy="160" r="6"/><circle cx="472" cy="138" r="6"/><circle cx="450" cy="100" r="5"/></g>
+<g stroke="#e07b2a" stroke-width="2"><line x1="240" y1="200" x2="420" y2="200"/></g><polygon points="420,193 434,200 420,207" fill="#e07b2a"/>
+<text x="330" y="222" text-anchor="middle" fill="#e07b2a">particles drift up the salt gradient (diffusiophoresis)</text>
+<line x1="540" y1="66" x2="440" y2="66" stroke="#235" stroke-width="2"/><polygon points="440,59 426,66 440,73" fill="#235"/>
+<text x="560" y="70" fill="#235">front recedes</text>
+<text x="60" y="80" fill="#447">low salt</text><text x="400" y="80" fill="#147">high salt</text>
+<text x="360" y="258" text-anchor="middle" fill="#555" font-size="13">Faster drying (low humidity) gives a steeper gradient and more pile-up; slow drying weakens it.</text>
+<text x="360" y="282" text-anchor="middle" fill="#777" font-size="12">Original sketch of the idea in the abstract, not data from the paper.</text>
+</svg>
