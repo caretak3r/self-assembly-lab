@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320" font-family="sans-serif">
+<rect width="720" height="320" fill="#ffffff"/>
+<rect x="20" y="40" width="320" height="260" fill="#f6f7fb" stroke="#999"/>
+<rect x="380" y="40" width="320" height="260" fill="#f6f7fb" stroke="#999"/>
+<text x="180" y="28" text-anchor="middle" font-size="16">Low spin vs noise: rotors wander apart</text>
+<text x="540" y="28" text-anchor="middle" font-size="16">High spin vs noise: pairs link into chains</text>
+<defs>
+<g id="r"><path d="M0,-16 L5,-5 L16,0 L5,5 L0,16 L-5,5 L-16,0 L-5,-5 Z" fill="#e07b39" stroke="#7a3a12" stroke-width="1.5"/><path d="M10,-14 A17,17 0 0 1 17,-4" fill="none" stroke="#333" stroke-width="1.5"/><path d="M17,-4 l-1,-6 m1,6 l-6,-1" stroke="#333" stroke-width="1.5"/></g>
+</defs>
+<use href="#r" x="70" y="90"/><use href="#r" x="160" y="140" transform="rotate(20 160 140)"/><use href="#r" x="270" y="80"/><use href="#r" x="100" y="230" transform="rotate(35 100 230)"/><use href="#r" x="220" y="250"/><use href="#r" x="290" y="190" transform="rotate(10 290 190)"/><use href="#r" x="60" y="160"/><use href="#r" x="190" y="200" transform="rotate(40 190 200)"/>
+<use href="#r" x="440" y="110"/><use href="#r" x="472" y="110" transform="rotate(45 472 110)"/><use href="#r" x="504" y="110"/><use href="#r" x="536" y="110" transform="rotate(45 536 110)"/><use href="#r" x="568" y="110"/><use href="#r" x="600" y="110" transform="rotate(45 600 110)"/>
+<use href="#r" x="470" y="220"/><use href="#r" x="502" y="220" transform="rotate(45 502 220)"/><use href="#r" x="534" y="220"/><use href="#r" x="566" y="220" transform="rotate(45 566 220)"/>
+<text x="360" y="315" text-anchor="middle" font-size="12" fill="#555">Illustration only, not data from the paper. Arrows show each rotor spinning.</text>
+</svg>
