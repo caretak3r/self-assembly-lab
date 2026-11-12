@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320" font-family="sans-serif">
+<rect width="720" height="320" fill="#ffffff"/>
+<text x="360" y="26" text-anchor="middle" font-size="16">Higher voltage while filling the cell: rod-like molecules tilt from lying flat to standing up</text>
+<g font-size="13" text-anchor="middle">
+<text x="130" y="290">0 V: near planar (about 3 deg)</text>
+<text x="360" y="290">medium voltage: tilted</text>
+<text x="590" y="290">higher voltage: homeotropic (90 deg)</text>
+</g>
+<g stroke="#555" fill="#eef2f8">
+<rect x="30" y="60" width="200" height="190"/><rect x="260" y="60" width="200" height="190"/><rect x="490" y="60" width="200" height="190"/>
+</g>
+<g fill="#c9a227"><rect x="30" y="236" width="200" height="14"/><rect x="260" y="236" width="200" height="14"/><rect x="490" y="236" width="200" height="14"/></g>
+<g fill="#4a6fa5">
+<ellipse cx="80" cy="120" rx="30" ry="6"/><ellipse cx="170" cy="120" rx="30" ry="6"/><ellipse cx="80" cy="180" rx="30" ry="6"/><ellipse cx="170" cy="180" rx="30" ry="6"/>
+<ellipse cx="310" cy="120" rx="30" ry="6" transform="rotate(-45 310 120)"/><ellipse cx="400" cy="120" rx="30" ry="6" transform="rotate(-45 400 120)"/><ellipse cx="310" cy="190" rx="30" ry="6" transform="rotate(-45 310 190)"/><ellipse cx="400" cy="190" rx="30" ry="6" transform="rotate(-45 400 190)"/>
+<ellipse cx="545" cy="150" rx="6" ry="30"/><ellipse cx="590" cy="150" rx="6" ry="30"/><ellipse cx="635" cy="150" rx="6" ry="30"/>
+</g>
+<text x="360" y="312" text-anchor="middle" font-size="11" fill="#666">Gold strip = self-assembled rubrene layer at the surface. Illustration only, not data from the paper</text>
+</svg>
