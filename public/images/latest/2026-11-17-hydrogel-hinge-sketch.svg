@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" font-family="Helvetica, Arial, sans-serif">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" fill="#333">Illustration (not data): a hydrogel strip on an elastomer hinge</text>
+  <!-- Panel 1: flat -->
+  <g transform="translate(20,60)">
+    <text x="105" y="0" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">1. Dry or as made</text>
+    <rect x="10" y="90" width="80" height="14" fill="#9aa5b1"/>
+    <rect x="120" y="90" width="80" height="14" fill="#9aa5b1"/>
+    <rect x="10" y="104" width="190" height="8" fill="#f2b84b"/>
+    <rect x="90" y="90" width="30" height="14" fill="#4a90d9"/>
+    <text x="105" y="165" text-anchor="middle" font-size="12" fill="#444">flat hinge</text>
+  </g>
+  <!-- Panel 2: swell -->
+  <g transform="translate(255,60)">
+    <text x="105" y="0" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">2. Gel swells</text>
+    <g transform="translate(105,104)">
+      <g transform="rotate(-25)"><rect x="-95" y="-14" width="80" height="14" fill="#9aa5b1"/><rect x="-95" y="0" width="95" height="8" fill="#f2b84b"/></g>
+      <g transform="rotate(25)"><rect x="15" y="-14" width="80" height="14" fill="#9aa5b1"/><rect x="0" y="0" width="95" height="8" fill="#f2b84b"/></g>
+      <path d="M -14 4 L 14 4 L 30 -22 Q 0 -34 -30 -22 Z" fill="#4a90d9"/>
+    </g>
+    <text x="105" y="165" text-anchor="middle" font-size="12" fill="#444">swollen gel wedges plates down</text>
+  </g>
+  <!-- Panel 3: deswell -->
+  <g transform="translate(490,60)">
+    <text x="105" y="0" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">3. Gel shrinks</text>
+    <g transform="translate(105,104)">
+      <g transform="rotate(25)"><rect x="-95" y="-14" width="80" height="14" fill="#9aa5b1"/><rect x="-95" y="0" width="95" height="8" fill="#f2b84b"/></g>
+      <g transform="rotate(-25)"><rect x="15" y="-14" width="80" height="14" fill="#9aa5b1"/><rect x="0" y="0" width="95" height="8" fill="#f2b84b"/></g>
+      <path d="M 0 2 L -10 -15 L 10 -15 Z" fill="#4a90d9"/>
+    </g>
+    <text x="105" y="165" text-anchor="middle" font-size="12" fill="#444">shrunken gel pulls plates up</text>
+  </g>
+  <!-- legend -->
+  <g transform="translate(110,250)" font-size="12" fill="#333">
+    <rect x="0" y="0" width="16" height="12" fill="#4a90d9"/><text x="22" y="11">hydrogel (soaks up or loses water)</text>
+    <rect x="245" y="0" width="16" height="12" fill="#f2b84b"/><text x="267" y="11">elastomer layer</text>
+    <rect x="390" y="0" width="16" height="12" fill="#9aa5b1"/><text x="412" y="11">stiff box panels</text>
+  </g>
+  <text x="360" y="300" text-anchor="middle" font-size="12" fill="#666">Shapes and angles are illustrative only. Concept from Jolley et al., arXiv:2611.20857.</text>
+</svg>
