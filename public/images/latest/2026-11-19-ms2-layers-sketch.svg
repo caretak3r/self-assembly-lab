@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" font-family="Helvetica, Arial, sans-serif">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="360" y="24" text-anchor="middle" font-size="15" fill="#333">Illustration (not data): extra protein layers growing on a virus shell</text>
+  <!-- Panel 1 -->
+  <g transform="translate(120,165)">
+    <text x="0" y="-105" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">1. Wild-type MS2</text>
+    <circle r="55" fill="#e8eef7" stroke="#4a6fa5" stroke-width="10"/>
+    <path d="M -30 -10 q 15 -25 30 0 t 30 0 M -25 15 q 12 -18 25 0 t 25 0" fill="none" stroke="#7a5195" stroke-width="3"/>
+    <text x="-12" y="-62" font-size="18" fill="#c0392b" font-weight="bold">-</text>
+    <text x="50" y="-40" font-size="18" fill="#c0392b" font-weight="bold">-</text>
+    <text x="-70" y="10" font-size="18" fill="#c0392b" font-weight="bold">-</text>
+    <text x="40" y="58" font-size="18" fill="#c0392b" font-weight="bold">-</text>
+    <text x="0" y="100" text-anchor="middle" font-size="12" fill="#444">protein shell with RNA inside;</text>
+    <text x="0" y="116" text-anchor="middle" font-size="12" fill="#444">outer surface is negatively charged</text>
+  </g>
+  <!-- Panel 2 -->
+  <g transform="translate(360,165)">
+    <text x="0" y="-105" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">2. Add coat-protein pairs</text>
+    <circle r="55" fill="#e8eef7" stroke="#4a6fa5" stroke-width="10"/>
+    <g fill="#f2b84b" stroke="#b07d1a">
+      <rect x="-95" y="-60" width="22" height="12" rx="4"/><rect x="72" y="-70" width="22" height="12" rx="4"/>
+      <rect x="80" y="20" width="22" height="12" rx="4"/><rect x="-100" y="35" width="22" height="12" rx="4"/>
+      <rect x="-10" y="-90" width="22" height="12" rx="4"/>
+    </g>
+    <g font-size="12" fill="#1e7b34" font-weight="bold"><text x="-89" y="-64">+</text><text x="78" y="-74">+</text><text x="86" y="16">+</text><text x="-94" y="31">+</text><text x="-4" y="-94">+</text></g>
+    <text x="0" y="100" text-anchor="middle" font-size="12" fill="#444">positively charged proteins are</text>
+    <text x="0" y="116" text-anchor="middle" font-size="12" fill="#444">drawn to the shell (moderate salt)</text>
+  </g>
+  <!-- Panel 3 -->
+  <g transform="translate(600,165)">
+    <text x="0" y="-105" text-anchor="middle" font-size="14" font-weight="bold" fill="#222">3. Partial extra layer</text>
+    <circle r="55" fill="#e8eef7" stroke="#4a6fa5" stroke-width="10"/>
+    <path d="M -66 0 A 66 66 0 0 1 47 -46" fill="none" stroke="#f2b84b" stroke-width="12"/>
+    <path d="M 60 25 A 66 66 0 0 1 30 58" fill="none" stroke="#f2b84b" stroke-width="12"/>
+    <text x="0" y="100" text-anchor="middle" font-size="12" fill="#444">patches nucleate and grow, but</text>
+    <text x="0" y="116" text-anchor="middle" font-size="12" fill="#444">rarely cover the whole particle</text>
+  </g>
+  <text x="360" y="306" text-anchor="middle" font-size="11" fill="#777">Not to scale. Concept from Williams et al., arXiv:2611.24513; drawn by Self-Assembly Lab.</text>
+</svg>
