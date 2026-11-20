@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" font-family="Helvetica, Arial, sans-serif">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">Illustration (not data): learning to shape a ferrofluid with one magnet</text>
+  <!-- panel 1: setup -->
+  <text x="120" y="50" text-anchor="middle" font-size="13" fill="#333">1. Setup</text>
+  <rect x="95" y="62" width="50" height="26" rx="4" fill="#555"/>
+  <circle cx="120" cy="92" r="7" fill="#333"/>
+  <text x="155" y="80" font-size="11" fill="#333">camera</text>
+  <line x1="120" y1="100" x2="120" y2="140" stroke="#999" stroke-dasharray="4 3"/>
+  <rect x="50" y="145" width="140" height="45" rx="6" fill="#dbeefc" stroke="#5a8fc0" stroke-width="2"/>
+  <ellipse cx="120" cy="180" rx="30" ry="7" fill="#111"/>
+  <text x="196" y="170" font-size="11" fill="#333">jar: water</text>
+  <text x="196" y="184" font-size="11" fill="#333">+ ferrofluid</text>
+  <rect x="80" y="196" width="80" height="34" rx="4" fill="#c46b2a"/>
+  <text x="120" y="217" text-anchor="middle" font-size="11" fill="#fff">electromagnet</text>
+  <!-- panel 2: loop -->
+  <text x="380" y="50" text-anchor="middle" font-size="13" fill="#333">2. Learn by trying</text>
+  <rect x="330" y="70" width="120" height="34" rx="6" fill="#f2f2f2" stroke="#777"/>
+  <text x="390" y="92" text-anchor="middle" font-size="12" fill="#222">camera image</text>
+  <rect x="330" y="140" width="120" height="34" rx="6" fill="#e8f5e1" stroke="#5a9a3c"/>
+  <text x="390" y="162" text-anchor="middle" font-size="12" fill="#222">learned policy</text>
+  <rect x="330" y="210" width="120" height="34" rx="6" fill="#fde9d9" stroke="#c46b2a"/>
+  <text x="390" y="232" text-anchor="middle" font-size="12" fill="#222">magnet current</text>
+  <path d="M390 104 L390 136" stroke="#444" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M390 174 L390 206" stroke="#444" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M330 227 C285 227 285 87 326 87" fill="none" stroke="#444" stroke-width="2" marker-end="url(#a)"/>
+  <text x="280" y="160" text-anchor="middle" font-size="11" fill="#555" transform="rotate(-90 280 160)">fluid moves</text>
+  <!-- panel 3: target vs fluid -->
+  <text x="600" y="50" text-anchor="middle" font-size="13" fill="#333">3. Match a target shape</text>
+  <g transform="translate(600 150)">
+    <path d="M0 -60 L10 -10 L52 30 L0 12 L-52 30 L-10 -10 Z" fill="none" stroke="#5a8fc0" stroke-width="2" stroke-dasharray="6 4"/>
+    <path d="M0 -50 C6 -30 8 -14 12 -8 C30 6 44 22 44 25 C30 20 12 12 0 10 C-12 12 -30 20 -44 25 C-44 22 -30 6 -12 -8 C-8 -14 -6 -30 0 -50 Z" fill="#111"/>
+  </g>
+  <text x="600" y="215" text-anchor="middle" font-size="11" fill="#333">dashed: target (3-ray asterisk)</text>
+  <text x="600" y="230" text-anchor="middle" font-size="11" fill="#333">black: fluid passing through it</text>
+  <text x="360" y="290" text-anchor="middle" font-size="11" fill="#666">Simplified sketch based on the paper's abstract and figure captions. Shapes, sizes and layout are illustrative only.</text>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#444"/></marker></defs>
+</svg>

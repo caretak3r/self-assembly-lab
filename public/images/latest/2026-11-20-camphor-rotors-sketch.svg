@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" font-family="Helvetica, Arial, sans-serif">
+  <rect width="720" height="320" fill="#ffffff"/>
+  <text x="360" y="22" text-anchor="middle" font-size="15" font-weight="bold" fill="#222">Illustration (not data): four identical rotors, three behaviours</text>
+  <circle cx="220" cy="170" r="130" fill="#e3f1fb" stroke="#7aaed6" stroke-width="2"/>
+  <text x="220" y="315" text-anchor="middle" font-size="11" fill="#555">dish of water seen from above</text>
+  <rect x="160" y="110" width="120" height="120" fill="none" stroke="#999" stroke-dasharray="5 4"/>
+  <!-- rotors: pivots at corners -->
+  <g fill="#f4d35e" stroke="#9a7b10" stroke-width="1.5">
+    <ellipse cx="160" cy="110" rx="30" ry="10" transform="rotate(-30 160 110) translate(-22 0)"/>
+    <ellipse cx="280" cy="110" rx="30" ry="10" transform="rotate(75 280 110) translate(22 0)"/>
+    <ellipse cx="280" cy="230" rx="30" ry="10" transform="rotate(30 280 230) translate(22 0)"/>
+    <ellipse cx="160" cy="230" rx="30" ry="10" transform="rotate(-30 160 230) translate(-22 0)"/>
+  </g>
+  <g fill="#333"><circle cx="160" cy="110" r="3.5"/><circle cx="280" cy="110" r="3.5"/><circle cx="280" cy="230" r="3.5"/><circle cx="160" cy="230" r="3.5"/></g>
+  <g font-size="14" font-weight="bold" fill="#222">
+    <text x="140" y="140">1</text><text x="290" y="140">2</text><text x="290" y="215">3</text><text x="140" y="215">4</text>
+  </g>
+  <g font-size="13" fill="#222">
+    <text x="410" y="94">Rotors 1 and 4: in step (synchronized)</text>
+    <text x="410" y="144">Rotors 3 and 4: mirror images</text>
+    <text x="410" y="162">(anti-synchronized)</text>
+    <text x="410" y="209">Rotor 2: its own rhythm (incoherent)</text>
+  </g>
+  <text x="560" y="260" text-anchor="middle" font-size="11" fill="#555">Each yellow ellipse spins around a pin at a corner,</text>
+  <text x="560" y="275" text-anchor="middle" font-size="11" fill="#555">pushed by surface-tension (Marangoni) flows;</text>
+  <text x="560" y="290" text-anchor="middle" font-size="11" fill="#555">they "talk" only through the shared water surface.</text>
+</svg>
