@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="320" viewBox="0 0 720 320" font-family="Helvetica, Arial, sans-serif">
+<rect width="720" height="320" fill="#ffffff"/>
+<text x="360" y="22" font-size="15" text-anchor="middle" font-weight="bold" fill="#222">Is it chemistry or just heat? Light on a two-faced membrane (schematic, not data)</text>
+<defs><marker id="a3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker><linearGradient id="t" x1="0" x2="1"><stop offset="0" stop-color="#f4cccc"/><stop offset="1" stop-color="#cfe2f3"/></linearGradient></defs>
+<text x="360" y="50" font-size="13" text-anchor="middle" fill="#333">Side view of a 1.6 mm tall channel next to the lit membrane</text>
+<rect x="60" y="80" width="600" height="150" fill="url(#t)" stroke="#555"/>
+<rect x="60" y="150" width="70" height="10" fill="#bf9000"/><text x="95" y="188" font-size="10" text-anchor="middle" fill="#333">TiO2 / gold</text>
+<text x="95" y="175" font-size="10" text-anchor="middle" fill="#333">membrane</text>
+<line x1="80" y1="60" x2="80" y2="148" stroke="#8e7cc3" stroke-width="2" stroke-dasharray="3 3"/>
+<line x1="100" y1="60" x2="100" y2="148" stroke="#8e7cc3" stroke-width="2" stroke-dasharray="3 3"/>
+<line x1="120" y1="60" x2="120" y2="148" stroke="#8e7cc3" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="40" y="70" font-size="10" fill="#8e7cc3">UV light</text>
+<line x1="200" y1="105" x2="250" y2="105" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="250" y1="205" x2="200" y2="205" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="290" y1="105" x2="340" y2="105" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="340" y1="205" x2="290" y2="205" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="380" y1="105" x2="430" y2="105" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="430" y1="205" x2="380" y2="205" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="470" y1="105" x2="520" y2="105" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="520" y1="205" x2="470" y2="205" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="560" y1="105" x2="610" y2="105" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<line x1="610" y1="205" x2="560" y2="205" stroke="#333" stroke-width="2" marker-end="url(#a3)"/>
+<text x="360" y="160" font-size="12" text-anchor="middle" fill="#333">one half of the depth flows one way, the other half flows back:</text>
+<text x="360" y="176" font-size="12" text-anchor="middle" fill="#333">a slow rolling loop (Hadley convection), no net pumping</text>
+<text x="160" y="250" font-size="11" text-anchor="middle" fill="#cc4125">warmer (gold soaks up light)</text>
+<text x="580" y="250" font-size="11" text-anchor="middle" fill="#3d85c6">cooler</text>
+<text x="360" y="280" font-size="11" text-anchor="middle" fill="#555">Salt test: adding salt should weaken a surface-chemistry flow, but the profile did not change,</text>
+<text x="360" y="295" font-size="11" text-anchor="middle" fill="#555">so heat-driven convection was the main driver here. In much thinner channels it fades away.</text>
+</svg>
