@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Self-Assembly Lab — V0.1 Local-Rule Swarm Simulator</title>
+<style>
+  :root {
+    --bg: #0c0f14;
+    --panel: #131820;
+    --border: #232c3b;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --amber: #f59e0b;
+    --cyan: #22d3ee;
+    --copper: #d97706;
+    --green: #34d399;
+    --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 100vh;
+    overflow: hidden;
+  }
+  aside {
+    background: var(--panel);
+    border-right: 1px solid var(--border);
+    padding: 18px 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  h1 { font-size: 15px; font-weight: 700; letter-spacing: 0.02em; }
+  .subtitle { font-size: 12px; color: var(--muted); line-height: 1.45; margin-top: 4px; }
+  .section {
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .btn-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+  button {
+    background: #1b2230;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  button:hover { background: #242e40; border-color: #394860; }
+  button.primary { background: #1d4ed8; border-color: #2563eb; }
+  button.primary:hover { background: #2563eb; }
+  button.warn { background: #78350f; border-color: #b45309; }
+  button.warn:hover { background: #92400e; }
+  button.active { background: #164e63; border-color: var(--cyan); color: #cffafe; }
+  label.slider {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+  }
+  .slider-head {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text);
+  }
+  .slider-head span.val {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--cyan);
+  }
+  input[type="range"] { width: 100%; accent-color: var(--cyan); }
+  .metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .metric {
+    background: #0e131a;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 10px;
+  }
+  .metric .k { font-size: 10px; text-transform: uppercase; color: var(--muted); letter-spacing: 0.06em; }
+  .metric .v {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .legend {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .dot { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .rule-box {
+    background: #0e131a;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 10px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #cbd5e1;
+  }
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .topbar {
+    height: 40px;
+    background: rgba(19, 24, 32, 0.9);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .topbar code {
+    color: var(--amber);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  canvas {
+    flex: 1;
+    width: 100%;
+    height: calc(100vh - 40px);
+    display: block;
+    cursor: crosshair;
+  }
+</style>
+</head>
+<body>
+<aside>
+  <div>
+    <h1>V0.1 Self-Assembly Simulator</h1>
+    <p class="subtitle">
+      40 mm magnetic rover tiles using <strong>local-only IR + magnetic snap</strong>.
+      No global GPS; power &amp; coordinates propagate hop-by-hop from the seed brick.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Simulation Control</div>
+    <div class="btn-row">
+      <button id="btnToggle" class="primary">Pause</button>
+      <button id="btnReset">Scatter &amp; Reset</button>
+    </div>
+    <div class="btn-row">
+      <button id="btnUndock" class="warn">EPM Undock Pulse</button>
+      <button id="btnStep">Step +100ms</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Target Morphology</div>
+    <div class="btn-row-3" id="shapeButtons">
+      <button data-shape="tbridge" class="active">T-Bridge</button>
+      <button data-shape="arrow">Arrow</button>
+      <button data-shape="wrench">Wrench</button>
+      <button data-shape="ring">Ring</button>
+      <button data-shape="cross">Cross</button>
+      <button data-shape="line">Beam</button>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Hardware &amp; Noise Parameters</div>
+    <label class="slider">
+      <div class="slider-head"><span>Swarm Size (N)</span><span class="val" id="valN">16</span></div>
+      <input type="range" id="inpN" min="6" max="36" step="2" value="16" />
+    </label>
+    <label class="slider">
+      <div class="slider-head"><span>Motor / Odometry Noise</span><span class="val" id="valMotorNoise">12%</span></div>
+      <input type="range" id="inpMotorNoise" min="0" max="45" step="1" value="12" />
+    </label>
+    <label class="slider">
+      <div class="slider-head"><span>IR Packet Drop Rate</span><span class="val" id="valIrNoise">8%</span></div>
+      <input type="range" id="inpIrNoise" min="0" max="40" step="1" value="8" />
+    </label>
+    <label class="slider">
+      <div class="slider-head"><span>Dead Modules (%)</span><span class="val" id="valDead">6%</span></div>
+      <input type="range" id="inpDead" min="0" max="30" step="2" value="6" />
+    </label>
+    <label class="slider">
+      <div class="slider-head"><span>Magnet Snap Radius</span><span class="val" id="valSnap">14 mm</span></div>
+      <input type="range" id="inpSnap" min="6" max="24" step="1" value="14" />
+    </label>
+    <label class="slider">
+      <div class="slider-head"><span>Sim Speed</span><span class="val" id="valSpeed">1.5x</span></div>
+      <input type="range" id="inpSpeed" min="0.5" max="4" step="0.5" value="1.5" />
+    </label>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Live Telemetry</div>
+    <div class="metrics">
+      <div class="metric"><div class="k">Docked</div><div class="v" id="mDocked" style="color:var(--cyan)">1 / 10</div></div>
+      <div class="metric"><div class="k">Bus Continuity</div><div class="v" id="mBus" style="color:var(--amber)">100%</div></div>
+      <div class="metric"><div class="k">Elapsed</div><div class="v" id="mTime">0.0s</div></div>
+      <div class="metric"><div class="k">Dock Retries</div><div class="v" id="mRetries" style="color:var(--muted)">0</div></div>
+    </div>
+    <div class="legend">
+      <div class="legend-item"><span class="dot" style="background:var(--amber)"></span>Seed (Root Power)</div>
+      <div class="legend-item"><span class="dot" style="background:var(--cyan)"></span>Docked + Powered</div>
+      <div class="legend-item"><span class="dot" style="background:var(--green)"></span>Edge-Following</div>
+      <div class="legend-item"><span class="dot" style="background:var(--red)"></span>Dead / Faulty</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Sticky-Note Local Rule</div>
+    <div class="rule-box">
+1. IF seed: broadcast (0,0) on IR.<br/>
+2. IF docked: relay coords + 5V bus.<br/>
+3. IF free:<br/>
+   - sense nearest docked IR beacon<br/>
+   - orbit clockwise at r = 1.6·L<br/>
+   - IF adjacent open target slot:<br/>
+     align face → snap magnets →<br/>
+     verify bus continuity → LOCK
+    </div>
+  </div>
+</aside>
+
+<main>
+  <div class="topbar">
+    <div>Arena: <code>640 × 480 mm</code> conductive charging mat · Tile: <code>40 × 40 mm</code></div>
+    <div>Click any robot to toggle <code>FAULT / LIVE</code></div>
+  </div>
+  <canvas id="canvas"></canvas>
+</main>
+
+<script>
+(() => {
+  const canvas = document.getElementById("canvas");
+  const ctx = canvas.getContext("2d");
+
+  // Physical scale: 1 grid cell = 40mm tile
+  const TILE_MM = 40;
+  const SHAPES = {
+    tbridge: [[0,0],[1,0],[-1,0],[2,0],[-2,0],[0,1],[0,2],[0,3],[1,3],[-1,3]],
+    arrow:   [[0,0],[0,-1],[0,1],[1,0],[2,0],[1,-1],[1,1],[-1,0],[-2,0],[0,-2],[0,2]],
+    wrench:  [[0,0],[1,0],[2,0],[3,0],[-1,0],[-2,0],[-2,-1],[-2,1],[-3,-1],[-3,1],[3,-1],[3,1]],
+    ring:    [[0,0],[1,0],[2,0],[2,1],[2,2],[1,2],[0,2],[-1,2],[-1,1],[-1,0]],
+    cross:   [[0,0],[1,0],[2,0],[-1,0],[-2,0],[0,1],[0,2],[0,-1],[0,-2]],
+    line:    [[0,0],[1,0],[2,0],[3,0],[-1,0],[-2,0],[-3,0],[4,0]]
+  };
+
+  let state = {
+    running: true,
+    shapeKey: "tbridge",
+    N: 16,
+    motorNoise: 0.12,
+    irDrop: 0.08,
+    deadRate: 0.06,
+    snapMm: 14,
+    speed: 1.5,
+    simTime: 0,
+    retries: 0,
+    robots: [],
+    targetSet: new Set(),
+    targetCoords: [],
+    undockCooldown: 0
+  };
+
+  let pxPerMm = 1.1;
+  let originX = 400;
+  let originY = 300;
+
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * devicePixelRatio;
+    canvas.height = rect.height * devicePixelRatio;
+    ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+    pxPerMm = Math.min(rect.width / 660, rect.height / 500);
+    originX = rect.width / 2;
+    originY = rect.height / 2;
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  const key = (gx, gy) => `${gx},${gy}`;
+  const gridToMm = (gx, gy) => ({ x: gx * TILE_MM, y: gy * TILE_MM });
+  const mmToPx = (mx, my) => ({ x: originX + mx * pxPerMm, y: originY + my * pxPerMm });
+
+  function setShape(shapeKey) {
+    state.shapeKey = shapeKey;
+    state.targetCoords = SHAPES[shapeKey];
+    state.targetSet = new Set(state.targetCoords.map(([gx, gy]) => key(gx, gy)));
+    // Mark any docked robot outside new target as free (except seed)
+    for (const r of state.robots) {
+      if (r.role === "docked" && !state.targetSet.has(key(r.gx, r.gy))) {
+        r.role = "free";
+        r.gx = null; r.gy = null;
+        r.powered = false;
+        r.vx = (Math.random() - 0.5) * 45;
+        r.vy = (Math.random() - 0.5) * 45;
+      }
+    }
+  }
+
+  function resetSim() {
+    state.simTime = 0;
+    state.retries = 0;
+    state.undockCooldown = 0;
+    state.targetCoords = SHAPES[state.shapeKey];
+    state.targetSet = new Set(state.targetCoords.map(([gx, gy]) => key(gx, gy)));
+
+    const robots = [];
+    // Robot 0: Seed brick at (0,0)
+    robots.push({
+      id: 0,
+      role: "seed",
+      gx: 0, gy: 0,
+      x: 0, y: 0,
+      vx: 0, vy: 0,
+      theta: 0,
+      powered: true,
+      irFlash: 0,
+      orbitDir: 1
+    });
+
+    const deadTargetCount = Math.round((state.N - 1) * state.deadRate);
+    for (let i = 1; i < state.N; i++) {
+      const angle = (i / (state.N - 1)) * Math.PI * 2 + (Math.random() - 0.5) * 0.4;
+      const radius = 155 + Math.random() * 95;
+      const isDead = i <= deadTargetCount;
+      robots.push({
+        id: i,
+        role: isDead ? "dead" : "free",
+        gx: null, gy: null,
+        x: Math.cos(angle) * radius,
+        y: Math.sin(angle) * radius,
+        vx: 0, vy: 0,
+        theta: Math.random() * Math.PI * 2,
+        powered: false,
+        irFlash: 0,
+        orbitDir: 1,
+        targetSlot: null,
+        alignTimer: 0
+      });
+    }
+    state.robots = robots;
+    recomputePowerBus();
+  }
+
+  function recomputePowerBus() {
+    const dockedMap = new Map();
+    for (const r of state.robots) {
+      r.powered = false;
+      if (r.role === "seed" || r.role === "docked") {
+        dockedMap.set(key(r.gx, r.gy), r);
+      }
+    }
+    const seed = state.robots[0];
+    if (!seed) return;
+    const queue = [seed];
+    seed.powered = true;
+    const dirs = [[1,0],[-1,0],[0,1],[0,-1]];
+    while (queue.length) {
+      const cur = queue.shift();
+      for (const [dx, dy] of dirs) {
+        const nb = dockedMap.get(key(cur.gx + dx, cur.gy + dy));
+        if (nb && !nb.powered && nb.role !== "dead") {
+          nb.powered = true;
+          queue.push(nb);
+        }
+      }
+    }
+  }
+
+  function getOpenFrontierSlots() {
+    const occupied = new Set();
+    for (const r of state.robots) {
+      if (r.role === "seed" || r.role === "docked") {
+        occupied.add(key(r.gx, r.gy));
+      }
+    }
+    const frontier = [];
+    const dirs = [[1,0],[-1,0],[0,1],[0,-1]];
+    for (const [gx, gy] of state.targetCoords) {
+      const k = key(gx, gy);
+      if (occupied.has(k)) continue;
+      // Must be adjacent to an already-docked powered neighbor (local IR relay!)
+      let hasPoweredNeighbor = false;
+      for (const [dx, dy] of dirs) {
+        const nk = key(gx + dx, gy + dy);
+        if (occupied.has(nk)) {
+          const nb = state.robots.find(r => (r.role === "seed" || r.role === "docked") && r.gx === gx + dx && r.gy === gy + dy && r.powered);
+          if (nb) { hasPoweredNeighbor = true; break; }
+        }
+      }
+      if (hasPoweredNeighbor) frontier.push({ gx, gy, ...gridToMm(gx, gy) });
+    }
+    return frontier;
+  }
+
+  function step(dt) {
+    state.simTime += dt;
+    if (state.undockCooldown > 0) state.undockCooldown = Math.max(0, state.undockCooldown - dt);
+
+    const frontier = getOpenFrontierSlots();
+    const docked = state.robots.filter(r => r.role === "seed" || r.role === "docked");
+    const IR_RANGE_MM = 115;
+
+    for (const r of state.robots) {
+      if (r.irFlash > 0) r.irFlash = Math.max(0, r.irFlash - dt * 3);
+      if (r.role === "seed" || r.role === "docked" || r.role === "dead") continue;
+
+      // 1. Local IR sensing: find nearest docked robot within IR range
+      let nearestDocked = null;
+      let minD = Infinity;
+      for (const d of docked) {
+        const dist = Math.hypot(d.x - r.x, d.y - r.y);
+        if (dist < minD) { minD = dist; nearestDocked = d; }
+      }
+
+      // Check if an open frontier slot is within IR sensing range
+      let chosenSlot = null;
+      if (state.undockCooldown <= 0 && Math.random() > state.irDrop) {
+        let bestSlotDist = Infinity;
+        for (const s of frontier) {
+          const sd = Math.hypot(s.x - r.x, s.y - r.y);
+          if (sd < IR_RANGE_MM && sd < bestSlotDist) {
+            bestSlotDist = sd;
+            chosenSlot = s;
+          }
+        }
+      }
+
+      let ax = 0, ay = 0;
+
+      if (chosenSlot) {
+        // Approach + align to adjacent open target slot
+        const dx = chosenSlot.x - r.x;
+        const dy = chosenSlot.y - r.y;
+        const dist = Math.hypot(dx, dy) || 1;
+        const pull = dist < state.snapMm + TILE_MM * 0.5 ? 190 : 95;
+        ax += (dx / dist) * pull;
+        ay += (dy / dist) * pull;
+        r.irFlash = 0.8;
+
+        // Magnetic snap + face alignment
+        const targetTheta = Math.round(r.theta / (Math.PI / 2)) * (Math.PI / 2);
+        r.theta += (targetTheta - r.theta) * Math.min(1, dt * 8);
+
+        if (dist < state.snapMm * 0.55) {
+          // Verify slot still free
+          const taken = state.robots.some(o => (o.role === "seed" || o.role === "docked") && o.gx === chosenSlot.gx && o.gy === chosenSlot.gy);
+          if (!taken) {
+            // Small chance of failed dock due to misalignment under high noise
+            if (Math.random() < state.motorNoise * 0.25) {
+              state.retries++;
+              r.vx = -(dx / dist) * 35;
+              r.vy = -(dy / dist) * 35;
+            } else {
+              r.role = "docked";
+              r.gx = chosenSlot.gx;
+              r.gy = chosenSlot.gy;
+              r.x = chosenSlot.x;
+              r.y = chosenSlot.y;
+              r.vx = 0; r.vy = 0;
+              r.theta = 0;
+              recomputePowerBus();
+              continue;
+            }
+          }
+        }
+      } else if (nearestDocked) {
+        // Kilobot-style edge-following orbit around the growing structure
+        const dx = nearestDocked.x - r.x;
+        const dy = nearestDocked.y - r.y;
+        const dist = Math.hypot(dx, dy) || 1;
+        const desiredOrbit = TILE_MM * 1.55;
+        const radialErr = dist - desiredOrbit;
+        // Tangent (clockwise orbit) + radial spring
+        const tx = -dy / dist * r.orbitDir;
+        const ty = dx / dist * r.orbitDir;
+        ax += tx * 68 + (dx / dist) * Math.max(-65, Math.min(65, radialErr * 1.6));
+        ay += ty * 68 + (dy / dist) * Math.max(-65, Math.min(65, radialErr * 1.6));
+        r.theta = Math.atan2(r.vy, r.vx);
+      }
+
+      // 2. Soft collision avoidance against all other robots
+      for (const o of state.robots) {
+        if (o === r) continue;
+        const dx = r.x - o.x;
+        const dy = r.y - o.y;
+        const dist = Math.hypot(dx, dy) || 0.01;
+        const minSep = (o.role === "docked" || o.role === "seed") && chosenSlot ? TILE_MM * 0.92 : TILE_MM * 1.15;
+        if (dist < minSep) {
+          const push = (minSep - dist) * 10.5;
+          ax += (dx / dist) * push;
+          ay += (dy / dist) * push;
+        }
+      }
+
+      // 3. Motor / odometry noise
+      const noiseAmp = state.motorNoise * 130;
+      ax += (Math.random() - 0.5) * noiseAmp;
+      ay += (Math.random() - 0.5) * noiseAmp;
+
+      // Integrate velocity with tabletop friction
+      r.vx = (r.vx + ax * dt) * Math.pow(0.18, dt);
+      r.vy = (r.vy + ay * dt) * Math.pow(0.18, dt);
+
+      const maxV = 62;
+      const vMag = Math.hypot(r.vx, r.vy);
+      if (vMag > maxV) { r.vx = (r.vx / vMag) * maxV; r.vy = (r.vy / vMag) * maxV; }
+
+      r.x += r.vx * dt;
+      r.y += r.vy * dt;
+
+      // Arena bounds (620 x 460 mm)
+      const halfW = 300, halfH = 220;
+      if (r.x < -halfW) { r.x = -halfW; r.vx = Math.abs(r.vx); }
+      if (r.x >  halfW) { r.x =  halfW; r.vx = -Math.abs(r.vx); }
+      if (r.y < -halfH) { r.y = -halfH; r.vy = Math.abs(r.vy); }
+      if (r.y >  halfH) { r.y =  halfH; r.vy = -Math.abs(r.vy); }
+    }
+  }
+
+  function draw() {
+    const w = canvas.width / devicePixelRatio;
+    const h = canvas.height / devicePixelRatio;
+    ctx.clearRect(0, 0, w, h);
+
+    // 1. Conductive arena background grid (40mm pitch)
+    ctx.strokeStyle = "rgba(217, 119, 6, 0.11)";
+    ctx.lineWidth = 1;
+    const stepPx = TILE_MM * pxPerMm;
+    for (let x = originX % stepPx; x < w; x += stepPx) {
+      ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+    }
+    for (let y = originY % stepPx; y < h; y += stepPx) {
+      ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+    }
+
+    // 2. Target blueprint ghost slots
+    const tilePx = TILE_MM * pxPerMm;
+    for (const [gx, gy] of state.targetCoords) {
+      const p = mmToPx(gx * TILE_MM, gy * TILE_MM);
+      ctx.strokeStyle = "rgba(34, 211, 238, 0.28)";
+      ctx.setLineDash([4, 4]);
+      ctx.lineWidth = 1.2;
+      ctx.strokeRect(p.x - tilePx * 0.46, p.y - tilePx * 0.46, tilePx * 0.92, tilePx * 0.92);
+      ctx.setLineDash([]);
+    }
+
+    // 3. Power/data bus continuity lines between docked powered neighbors
+    const docked = state.robots.filter(r => r.role === "seed" || r.role === "docked");
+    ctx.strokeStyle = "rgba(245, 158, 11, 0.75)";
+    ctx.lineWidth = 3;
+    for (let i = 0; i < docked.length; i++) {
+      for (let j = i + 1; j < docked.length; j++) {
+        const a = docked[i], b = docked[j];
+        if (Math.abs(a.gx - b.gx) + Math.abs(a.gy - b.gy) === 1 && a.powered && b.powered) {
+          const pa = mmToPx(a.x, a.y), pb = mmToPx(b.x, b.y);
+          ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
+        }
+      }
+    }
+
+    // 4. Draw each 40mm robot tile
+    for (const r of state.robots) {
+      const p = mmToPx(r.x, r.y);
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(r.theta);
+
+      const s = tilePx * 0.88;
+      const half = s / 2;
+
+      // Chassis body
+      ctx.fillStyle = r.role === "dead" ? "#2a181c" : (r.role === "seed" ? "#262015" : "#1c2331");
+      ctx.strokeStyle = r.role === "seed" ? "#f59e0b"
+        : r.role === "docked" ? (r.powered ? "#22d3ee" : "#64748b")
+        : r.role === "dead" ? "#f87171" : "#34d399";
+      ctx.lineWidth = r.role === "seed" || r.role === "docked" ? 2 : 1.5;
+
+      // Chamfered square
+      const c = s * 0.14;
+      ctx.beginPath();
+      ctx.moveTo(-half + c, -half);
+      ctx.lineTo(half - c, -half);
+      ctx.lineTo(half, -half + c);
+      ctx.lineTo(half, half - c);
+      ctx.lineTo(half - c, half);
+      ctx.lineTo(-half + c, half);
+      ctx.lineTo(-half, half - c);
+      ctx.lineTo(-half, -half + c);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      // 4 hermaphroditic magnetic facepads (gold pogo contacts)
+      ctx.fillStyle = "#d97706";
+      const padW = s * 0.26, padH = 2.5;
+      ctx.fillRect(-padW / 2, -half - 0.5, padW, padH);
+      ctx.fillRect(-padW / 2, half - padH + 0.5, padW, padH);
+      ctx.fillRect(-half - 0.5, -padW / 2, padH, padW);
+      ctx.fillRect(half - padH + 0.5, -padW / 2, padH, padW);
+
+      // Center status LED
+      ctx.beginPath();
+      ctx.arc(0, 0, Math.max(3, s * 0.12), 0, Math.PI * 2);
+      ctx.fillStyle = r.role === "seed" ? "#fbbf24"
+        : r.role === "docked" ? (r.powered ? "#22d3ee" : "#475569")
+        : r.role === "dead" ? "#ef4444"
+        : (r.irFlash > 0.1 ? "#38bdf8" : "#34d399");
+      ctx.fill();
+
+      ctx.restore();
+    }
+
+    // Update metrics UI
+    const dockedCount = docked.length;
+    const targetCount = state.targetCoords.length;
+    const poweredCount = docked.filter(r => r.powered).length;
+    document.getElementById("mDocked").textContent = `${dockedCount} / ${targetCount}`;
+    document.getElementById("mBus").textContent = `${Math.round((poweredCount / Math.max(1, dockedCount)) * 100)}%`;
+    document.getElementById("mTime").textContent = `${state.simTime.toFixed(1)}s`;
+    document.getElementById("mRetries").textContent = String(state.retries);
+  }
+
+  // Click robot to inject/clear hardware fault
+  canvas.addEventListener("click", (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = (e.clientX - rect.left - originX) / pxPerMm;
+    const my = (e.clientY - rect.top - originY) / pxPerMm;
+    for (const r of state.robots) {
+      if (r.role === "seed") continue;
+      if (Math.hypot(r.x - mx, r.y - my) < TILE_MM * 0.6) {
+        if (r.role === "dead") {
+          r.role = "free";
+        } else {
+          r.role = "dead";
+          r.gx = null; r.gy = null;
+          r.vx = 0; r.vy = 0;
+          r.powered = false;
+        }
+        recomputePowerBus();
+        break;
+      }
+    }
+  });
+
+  // Wire controls
+  document.getElementById("btnToggle").addEventListener("click", (e) => {
+    state.running = !state.running;
+    e.target.textContent = state.running ? "Pause" : "Resume";
+  });
+  document.getElementById("btnReset").addEventListener("click", resetSim);
+  document.getElementById("btnStep").addEventListener("click", () => { step(0.1); draw(); });
+  document.getElementById("btnUndock").addEventListener("click", () => {
+    state.undockCooldown = 1.4;
+    for (const r of state.robots) {
+      if (r.role === "docked") {
+        r.role = "free";
+        r.gx = null; r.gy = null;
+        r.powered = false;
+        const a = Math.atan2(r.y, r.x) + (Math.random() - 0.5) * 0.5;
+        r.vx = Math.cos(a) * 65;
+        r.vy = Math.sin(a) * 65;
+      }
+    }
+    recomputePowerBus();
+  });
+
+  document.querySelectorAll("#shapeButtons button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll("#shapeButtons button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      setShape(btn.dataset.shape);
+    });
+  });
+
+  function bindSlider(id, valId, fmt, setter, shouldReset = false) {
+    const el = document.getElementById(id);
+    el.addEventListener("input", () => {
+      const v = parseFloat(el.value);
+      document.getElementById(valId).textContent = fmt(v);
+      setter(v);
+      if (shouldReset) resetSim();
+    });
+  }
+  bindSlider("inpN", "valN", v => `${v}`, v => { state.N = v; }, true);
+  bindSlider("inpMotorNoise", "valMotorNoise", v => `${v}%`, v => { state.motorNoise = v / 100; });
+  bindSlider("inpIrNoise", "valIrNoise", v => `${v}%`, v => { state.irDrop = v / 100; });
+  bindSlider("inpDead", "valDead", v => `${v}%`, v => { state.deadRate = v / 100; }, true);
+  bindSlider("inpSnap", "valSnap", v => `${v} mm`, v => { state.snapMm = v; });
+  bindSlider("inpSpeed", "valSpeed", v => `${v.toFixed(1)}x`, v => { state.speed = v; });
+
+  resetSim();
+
+  let last = performance.now();
+  function loop(now) {
+    const rawDt = Math.min(0.05, (now - last) / 1000);
+    last = now;
+    if (state.running) {
+      const subSteps = 3;
+      const dt = (rawDt * state.speed) / subSteps;
+      for (let i = 0; i < subSteps; i++) step(dt);
+    }
+    draw();
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
